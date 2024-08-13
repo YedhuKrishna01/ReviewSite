@@ -1,0 +1,14 @@
+.slide {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: hidden; /* or use overflow-x: hidden; to prevent scrolling */
+    scroll-snap-type: x mandatory; /* Optional: for smooth scrolling between items */
+}  
+
+.homeIntro{
+    background: rgb(255,255,255);
+    background: linear-gradient(90deg, rgba(255,255,255,0.02984943977591037) 0%, rgba(227,204,204,0.027048319327731107) 100%);
+    flex: 0 0 auto; /* Prevent the flex items from shrinking or growing */
+    width: calc(100% / 3); /* Adjust this based on how many items you want visible at once */
+    scroll-snap-align: start;
+}

@@ -3,8 +3,8 @@ import React from "react";
 function Navbar() {
   return (
     <div className="flex h-20 p-5">
-      <div className="text-white p-2 font-semibold text-2xl w-5/6">Logo.</div>
-      <div className="w-1/6 p-2 animate-bounce">
+      <div className="text-white p-2 font-semibold text-2xl w-4/6">Logo.</div>
+      <div className="w-2/6 p-2 flex justify-end">
         <svg
           xmlns="http://www.w3.org/2000/svg"
           height="35px"
