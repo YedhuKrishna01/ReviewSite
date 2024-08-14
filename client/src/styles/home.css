@@ -3,3 +3,20 @@
     background: rgb(255,255,255);
     background: linear-gradient(90deg, rgba(255,255,255,0.02984943977591037) 0%, rgba(227,204,204,0.027048319327731107) 100%);
 }
+
+.cardText{
+    background-color: rgba(0, 0, 0, 0.816);
+}
+
+.card1 {
+    background-image: url('/kingdomofapes.jpg');
+    background-size: cover;
+}
+.card2 {
+    background-image: url('/intern.jpg');
+    background-size: cover;
+}
+.card3 {
+    background-image: url('/dearzindagi.jpg');
+    background-size: cover;
+}

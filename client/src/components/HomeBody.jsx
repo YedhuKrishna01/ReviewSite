@@ -1,5 +1,6 @@
 import React, { useRef } from "react";
 import "../styles/home.css";
+import HomeMovieList from "./HomeMovieList";
 
 function HomeBody() {
   return (
@@ -10,8 +11,8 @@ function HomeBody() {
           Some subtext here for the intro.
         </div>
         <div className="absolute h-auto w-full flex flex-col gap-y-4 md:gap-y-6 items-center top-52 left-0">
-          <div className="text-xl w-10/12 font-lighter">Latest Reviews</div>
-          <div className="flex w-10/12 items-center relative">
+          <div className="text-xl w-10/12 font-semilight">Latest Reviews</div>
+          <div className="flex w-10/12 mt-[-10px] items-center relative">
             <div className="w-full flex flex-col gap-y-4">
               {/* deadpool & wolverine */}
 
@@ -404,6 +405,7 @@ function HomeBody() {
               </div>
             </div>
           </div>
+          <HomeMovieList />
         </div>
       </div>
     </div>
