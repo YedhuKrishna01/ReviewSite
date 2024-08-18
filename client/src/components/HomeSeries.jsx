@@ -4,7 +4,7 @@ function HomeSeries() {
   return (
     <div>
       <div className="text-black bg-red-900">
-        Check TV shows incerftte5y5ystead?
+        Check TV shows incerftte5y5ystead?ced
       </div>
     </div>
   );

@@ -46,6 +46,8 @@ function HomeMovieList() {
 
       <div className="w-full mt-[-2vh] flex slider" ref={slideRef}>
         <div className="w-full grid grid-cols-2 gap-4 slides p-6 rounded-lg">
+          {/* kingdom of the planet of the apes */}
+
           <div className="rounded-lg card1 relative">
             <div className="absolute cardText w-full bottom-0 left-0 rounded-b-lg pb-1">
               <div className="text-xs font-semibold whitespace-nowrap overflow-x-hidden text-ellipsis px-1 pt-2">
@@ -57,6 +59,9 @@ function HomeMovieList() {
               </div>
             </div>
           </div>
+
+          {/* The Intern */}
+
           <div className="rounded-lg card2 relative pt-48">
             <div className="absolute cardText w-full bottom-0 left-0 rounded-b-lg pb-1">
               <div className="text-xs font-semibold whitespace-nowrap overflow-x-hidden text-ellipsis px-1 pt-2">
@@ -68,6 +73,9 @@ function HomeMovieList() {
               </div>
             </div>
           </div>
+
+          {/* Dear Zindagi */}
+
           <div className="rounded-lg card3 relative pt-48">
             <div className="absolute cardText w-full bottom-0 left-0 rounded-b-lg pb-1">
               <div className="text-xs font-semibold whitespace-nowrap overflow-x-hidden text-ellipsis px-1 pt-2">
@@ -76,41 +84,134 @@ function HomeMovieList() {
               <div className="flex pt-1">
                 <div className="text-xs px-1">2016</div>
                 <div className="text-xs px-1">2hr 31m</div>
+              </div>
+            </div>
+          </div>
+
+          {/* A Song from the Dark */}
+
+          <div className="rounded-lg card4 relative pt-48">
+            <div className="absolute cardText w-full bottom-0 left-0 rounded-b-lg pb-1">
+              <div className="text-xs font-semibold whitespace-nowrap overflow-x-hidden text-ellipsis px-1 pt-2">
+                A Song from the Dark
+              </div>
+              <div className="flex pt-1">
+                <div className="text-xs px-1">2023</div>
+                <div className="text-xs px-1">1hr 45m</div>
               </div>
             </div>
           </div>
         </div>
         <div className="w-full grid grid-cols-2 gap-4 slides p-6 rounded-lg">
-          <div className="rounded-lg card1 relative">
+          {/* The Goat Life */}
+
+          <div className="rounded-lg card5 relative">
             <div className="absolute cardText w-full bottom-0 left-0 rounded-b-lg pb-1">
               <div className="text-xs font-semibold whitespace-nowrap overflow-x-hidden text-ellipsis px-1 pt-2">
-                Kingdom of the planet of the apes
+                Aadujeevitham
               </div>
               <div className="flex pt-1">
                 <div className="text-xs px-1">2024</div>
-                <div className="text-xs px-1">2hr 25m</div>
+                <div className="text-xs px-1">2hr 52m</div>
               </div>
             </div>
           </div>
-          <div className="rounded-lg card2 relative pt-48">
+
+          {/* Tarrot  */}
+
+          <div className="rounded-lg card6 relative pt-48">
             <div className="absolute cardText w-full bottom-0 left-0 rounded-b-lg pb-1">
               <div className="text-xs font-semibold whitespace-nowrap overflow-x-hidden text-ellipsis px-1 pt-2">
-                The Intern
+                Tarrot
               </div>
               <div className="flex pt-1">
-                <div className="text-xs px-1">2015</div>
-                <div className="text-xs px-1">2hr 01m</div>
+                <div className="text-xs px-1">2024</div>
+                <div className="text-xs px-1">1hr 32m</div>
               </div>
             </div>
           </div>
-          <div className="rounded-lg card3 relative pt-48">
+
+          {/* Shaitaan */}
+
+          <div className="rounded-lg card7 relative pt-48">
             <div className="absolute cardText w-full bottom-0 left-0 rounded-b-lg pb-1">
               <div className="text-xs font-semibold whitespace-nowrap overflow-x-hidden text-ellipsis px-1 pt-2">
-                Dear Zindagi
+                Shaitaan
               </div>
               <div className="flex pt-1">
-                <div className="text-xs px-1">2016</div>
-                <div className="text-xs px-1">2hr 31m</div>
+                <div className="text-xs px-1">2024</div>
+                <div className="text-xs px-1">2hr 08m</div>
+              </div>
+            </div>
+          </div>
+
+          {/* Single in Seoul  */}
+
+          <div className="rounded-lg card8 relative pt-48">
+            <div className="absolute cardText w-full bottom-0 left-0 rounded-b-lg pb-1">
+              <div className="text-xs font-semibold whitespace-nowrap overflow-x-hidden text-ellipsis px-1 pt-2">
+                Single in Seoul
+              </div>
+              <div className="flex pt-1">
+                <div className="text-xs px-1">2023</div>
+                <div className="text-xs px-1">1hr 43m</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div className="w-full grid grid-cols-2 gap-4 slides p-6 rounded-lg">
+          {/* Gifted */}
+
+          <div className="rounded-lg card9 relative">
+            <div className="absolute cardText w-full bottom-0 left-0 rounded-b-lg pb-1">
+              <div className="text-xs font-semibold whitespace-nowrap overflow-x-hidden text-ellipsis px-1 pt-2">
+                Gifted
+              </div>
+              <div className="flex pt-1">
+                <div className="text-xs px-1">2017</div>
+                <div className="text-xs px-1">1hr 41m</div>
+              </div>
+            </div>
+          </div>
+
+          {/* Jailer  */}
+
+          <div className="rounded-lg card10 relative pt-48">
+            <div className="absolute cardText w-full bottom-0 left-0 rounded-b-lg pb-1">
+              <div className="text-xs font-semibold whitespace-nowrap overflow-x-hidden text-ellipsis px-1 pt-2">
+                Jailer
+              </div>
+              <div className="flex pt-1">
+                <div className="text-xs px-1">2023</div>
+                <div className="text-xs px-1">2hr 45m</div>
+              </div>
+            </div>
+          </div>
+
+          {/* Maverick */}
+
+          <div className="rounded-lg card11 relative pt-48">
+            <div className="absolute cardText w-full bottom-0 left-0 rounded-b-lg pb-1">
+              <div className="text-xs font-semibold whitespace-nowrap overflow-x-hidden text-ellipsis px-1 pt-2">
+                Top Gun: Maverick
+              </div>
+              <div className="flex pt-1">
+                <div className="text-xs px-1">2022</div>
+                <div className="text-xs px-1">2hr 11m</div>
+              </div>
+            </div>
+          </div>
+
+          {/* Avatar 2  */}
+
+          <div className="rounded-lg card12 relative pt-48">
+            <div className="absolute cardText w-full bottom-0 left-0 rounded-b-lg pb-1">
+              <div className="text-xs font-semibold whitespace-nowrap overflow-x-hidden text-ellipsis px-1 pt-2">
+                Avatar: The Way of Water
+              </div>
+              <div className="flex pt-1">
+                <div className="text-xs px-1">2022</div>
+                <div className="text-xs px-1">2hr 32m</div>
               </div>
             </div>
           </div>

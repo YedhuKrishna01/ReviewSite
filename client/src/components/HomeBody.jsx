@@ -486,7 +486,13 @@ function HomeBody() {
               </div>
             </div>
           </div>
+
+          {/* More Movies */}
+
           <HomeMovieList />
+
+          {/* Navigate to TV shows */}
+
           <HomeSeries />
         </div>
       </div>
