@@ -19,68 +19,12 @@
     scroll-snap-align: start;
 }
 
-/* The first set of movies */
-
-.card1 {
-    background-image: url('/kingdomofapes.jpg');
-    background-size: cover;
-}
-
-.card2 {
-    background-image: url('/intern.jpg');
-    background-size: cover;
-}
-
-.card3 {
-    background-image: url('/dearzindagi.jpg');
-    background-size: cover;
-}
-
-.card4 {
-    background-image: url('/asongfromthedark.jpg');
-    background-size: cover;
-}
-
-/* Second set of movies */
-
-.card5 {
-    background-image: url('/goatlife.jpg');
-    background-size: cover;
-}
-.card6 {
-    background-image: url('/tarrot.jpg');
-    background-size: cover;
-}
-.card7 {
-    background-image: url('/shaitaan.jpg');
-    background-size: cover;
-}
-.card8 {
-    background-image: url('/singleinseoul.jpg');
-    background-size: cover;
-}
-
-/* Third set of movies */
-
-.card9 {
-    background-image: url('/gifted.jpg');
-    background-size: cover;
-}
-.card10 {
-    background-image: url('/jailer.jpg');
-    background-size: cover;
-}
-.card11 {
-    background-image: url('/maverick.jpg');
-    background-size: cover;
-}
-.card12 {
-    background-image: url('/avatar2.jpg');
-    background-size: cover;
-}
-
 .scrollButton{
-    background-color: rgba(255, 255, 255, 0.143);
+    background-color: rgba(255, 255, 255, 0.07);
     height: 2.5rem;
     width: 2.5rem;
+}
+
+.glossy{
+    background-color: rgba(0, 0, 0, 0.241);
 }

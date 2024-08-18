@@ -2,6 +2,7 @@ import React, { useRef } from "react";
 import "../styles/home.css";
 import HomeMovieList from "./HomeMovieList";
 import HomeSeries from "./HomeSeries";
+import { Link } from "react-router-dom";
 
 function HomeBody() {
   return (
@@ -19,7 +20,10 @@ function HomeBody() {
             <div className="w-full flex flex-col gap-y-4">
               {/* deadpool & wolverine */}
 
-              <div className="homeIntro rounded-lg p-2 w-full">
+              <Link
+                to="/DeadpoolReview"
+                className="homeIntro rounded-lg p-2 w-full"
+              >
                 <article className="p-3 space-x-4 items-start sm:space-x-6 lg:space-x-4 xl:space-x-6 flex">
                   <img
                     src="/Deadpool.jpg"
@@ -93,7 +97,7 @@ function HomeBody() {
                     </dl>
                   </div>
                 </article>
-              </div>
+              </Link>
 
               {/* It Ends With Us */}
 
