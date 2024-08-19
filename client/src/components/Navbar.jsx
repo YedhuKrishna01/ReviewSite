@@ -1,9 +1,14 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 function Navbar() {
   return (
     <div className="flex h-20 p-5">
-      <div className="text-white p-2 font-semibold text-2xl w-4/6">Logo.</div>
+      <div className="text-white p-2 font-medium text-2xl w-4/6">
+        <Link className="ml-2" to="/">
+          Reseña.
+        </Link>
+      </div>
       <div className="w-2/6 p-2 flex justify-end">
         <svg
           xmlns="http://www.w3.org/2000/svg"

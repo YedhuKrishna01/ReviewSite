@@ -8,7 +8,9 @@ function HomeBody() {
   return (
     <div>
       <div className="h-64 flex flex-col justify-center items-center relative text-white">
-        <div className="text-4xl font-semibold">Intro text here</div>
+        <div className="text-3xl text-center font-semibold">
+          Hello, fellow movie fanatics
+        </div>
         <div className="text-xl font-thin">
           Some subtext here for the intro.
         </div>
@@ -208,7 +210,7 @@ function HomeBody() {
                             <path d="M7.05 3.691c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.372 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.539 1.118l-2.8-2.034a1 1 0 00-1.176 0l-2.8 2.034c-.783.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.363-1.118L.98 9.483c-.784-.57-.381-1.81.587-1.81H5.03a1 1 0 00.95-.69L7.05 3.69z" />
                           </svg>
                         </dt>
-                        <dd>6.3</dd>
+                        <dd>7.25</dd>
                       </div>
                       <div className="dark:text-slate-200">
                         <dt className="sr-only">Rating</dt>
@@ -263,7 +265,10 @@ function HomeBody() {
 
               {/* The Beast Within  */}
 
-              <div className="homeIntro rounded-lg p-2 w-full">
+              <Link
+                to="/ThebeastwithinReview"
+                className="homeIntro rounded-lg p-2 w-full"
+              >
                 <article className="p-3 space-x-4 items-start sm:space-x-6 lg:space-x-4 xl:space-x-6 flex">
                   <img
                     src="/beast.jpg"
@@ -286,7 +291,7 @@ function HomeBody() {
                             <path d="M7.05 3.691c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.372 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.539 1.118l-2.8-2.034a1 1 0 00-1.176 0l-2.8 2.034c-.783.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.363-1.118L.98 9.483c-.784-.57-.381-1.81.587-1.81H5.03a1 1 0 00.95-.69L7.05 3.69z" />
                           </svg>
                         </dt>
-                        <dd>5.8</dd>
+                        <dd>6.5</dd>
                       </div>
                       <div className="dark:text-slate-200">
                         <dt className="sr-only">Rating</dt>
@@ -337,11 +342,14 @@ function HomeBody() {
                     </dl>
                   </div>
                 </article>
-              </div>
+              </Link>
 
               {/* Longlegs */}
 
-              <div className="homeIntro rounded-lg p-2 w-full">
+              <Link
+                to="/LonglegsReview"
+                className="homeIntro rounded-lg p-2 w-full"
+              >
                 <article className="p-3 space-x-4 items-start sm:space-x-6 lg:space-x-4 xl:space-x-6 flex">
                   <img
                     src="/longlegs.jpg"
@@ -364,7 +372,7 @@ function HomeBody() {
                             <path d="M7.05 3.691c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.372 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.539 1.118l-2.8-2.034a1 1 0 00-1.176 0l-2.8 2.034c-.783.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.363-1.118L.98 9.483c-.784-.57-.381-1.81.587-1.81H5.03a1 1 0 00.95-.69L7.05 3.69z" />
                           </svg>
                         </dt>
-                        <dd>7.1</dd>
+                        <dd>8.25</dd>
                       </div>
                       <div className="dark:text-slate-200">
                         <dt className="sr-only">Rating</dt>
@@ -415,11 +423,14 @@ function HomeBody() {
                     </dl>
                   </div>
                 </article>
-              </div>
+              </Link>
 
               {/* Inside Out 2 */}
 
-              <div className="homeIntro rounded-lg p-2 w-full">
+              <Link
+                to="/InsideoutReview"
+                className="homeIntro rounded-lg p-2 w-full"
+              >
                 <article className="p-3 space-x-4 items-start sm:space-x-6 lg:space-x-4 xl:space-x-6 flex">
                   <img
                     src="/insideout.jpg"
@@ -442,7 +453,7 @@ function HomeBody() {
                             <path d="M7.05 3.691c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.372 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.539 1.118l-2.8-2.034a1 1 0 00-1.176 0l-2.8 2.034c-.783.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.363-1.118L.98 9.483c-.784-.57-.381-1.81.587-1.81H5.03a1 1 0 00.95-.69L7.05 3.69z" />
                           </svg>
                         </dt>
-                        <dd>8</dd>
+                        <dd>7</dd>
                       </div>
                       <div className="dark:text-slate-200">
                         <dt className="sr-only">Rating</dt>
@@ -481,19 +492,19 @@ function HomeBody() {
                           >
                             <circle cx="1" cy="1" r="1" />
                           </svg>
-                          1h 26m
+                          1h 37m
                         </dd>
                       </div>
                       <div className="flex-none w-full mt-2 font-normal text-nowrap overflow-hidden">
                         <dt className="sr-only">Cast</dt>
                         <dd className="text-slate-400">
-                          Maika Monroe, Nicolas Cage
+                          Amy Poehler, Maya Hawke
                         </dd>
                       </div>
                     </dl>
                   </div>
                 </article>
-              </div>
+              </Link>
             </div>
           </div>
 

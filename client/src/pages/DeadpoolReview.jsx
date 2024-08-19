@@ -47,6 +47,7 @@ function DeadpoolReview() {
           previous two films, with the MCU’s influence doing nothing to diminish
           its edge.
           <br />
+          <br />
           Without giving away any spoilers, the story begins with Wade Wilson
           (Deadpool) living a mundane post-mercenary life. However, his peace is
           disrupted when the Time Variance Authority (TVA) apprehends him and
@@ -54,6 +55,7 @@ function DeadpoolReview() {
           To locate a variant of Wolverine to help stabilize his crumbling
           timeline. This sets the stage for a thrilling, chaotic journey filled
           with multiverse madness and unforgettable character moments.
+          <br />
           <br />
           {/* Normally invisible but can be expanded if needed */}
           {isExpanded && (
@@ -65,11 +67,13 @@ function DeadpoolReview() {
               no-nonsense Wolverine is the perfect foil to Deadpool’s manic
               energy, and their dynamic is the core of the film, fueling both
               its comedic and emotional beats.
+              <br />
               <br /> The supporting cast brings depth and variety, with standout
               performances from Emma Corrin, Morena Baccarin, Rob Delaney,
               Leslie Uggams, Aaron Stanford, and Matthew Macfadyen. Corrin, in
               particular, adds a layer of intensity and intrigue, elevating the
               narrative with her compelling portrayal.
+              <br />
               <br /> Shawn Levy’s direction is sharp and assured, seamlessly
               balancing the film’s varying tones. The screenplay—co-written by
               Levy, Reynolds, Rhett Reese, Paul Wernick, and Zeb Wells—is a
@@ -77,24 +81,28 @@ function DeadpoolReview() {
               is witty and authentic, staying true to the characters while
               pushing them into fresh, challenging situations.
               <br />
+              <br />
               The action sequences are thrilling and meticulously choreographed,
               highlighting the contrasting fighting styles of Deadpool and
               Wolverine. The visual effects, particularly in the multiverse
               sequences, are top-notch, delivering imaginative, visually
               stunning scenes. The smooth fusion of CGI and practical effects
               creates an immersive and visually cohesive experience.
+              <br />
               <br /> Humor is a constant throughout, with Reynolds delivering
               sharp one-liners and meta-jokes that keep the audience laughing.
               However, the film also explores deeper emotional themes. The
               evolving bond between Deadpool and Wolverine offers touching
               moments of connection and reflection amid the chaos, adding heart
               to the narrative.
+              <br />
               <br /> At its core, the film tackles themes of redemption,
               friendship, and second chances. Both Deadpool and Wolverine,
               haunted by their pasts, embark on a journey that forces them to
               confront their demons and seek peace. This emotional depth
               elevates the film beyond standard superhero fare, making it a more
               poignant experience.
+              <br />
               <br /> The pacing is brisk and engaging, with a well-structured
               narrative that holds viewers' attention from start to finish. The
               film deftly balances multiple plot threads, ensuring that each
@@ -108,10 +116,10 @@ function DeadpoolReview() {
 
       {/* Button to shrink and expand the review */}
 
-      <div className="flex justify-center mt-5">
+      <div className="flex justify-center mt-3">
         <button
           onClick={toggleExpand}
-          className="text-white homeIntro rounded-lg px-4 py-2 mb-5 opacity-80 hover:opacity-100"
+          className="text-white border-[1px] text-xs homeIntro rounded-lg px-4 py-2 mb-5 opacity-80 hover:opacity-100"
         >
           {isExpanded ? "Read Less" : "Read More"}
         </button>

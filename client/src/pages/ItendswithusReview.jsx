@@ -42,6 +42,7 @@ function ItendswithusReview() {
           strong source material and a star-studded cast, the film ultimately
           falls short, leaving viewers with a disappointing and somewhat
           superficial experience.
+          <br />
           <br /> A significant issue lies in the adaptation. The novel, praised
           for its raw and honest depiction of domestic abuse and the complex
           emotions surrounding such relationships, loses much of its impact in
@@ -49,6 +50,7 @@ function ItendswithusReview() {
           emotional and layered narrative into a two-hour runtime, but in doing
           so, it strips away much of the depth and nuance that made the book so
           compelling.
+          <br />
           <br />
           {/* Normally invisible but can be expanded if needed */}
           {isExpanded && (
@@ -61,6 +63,7 @@ function ItendswithusReview() {
               surface-level appeal, and when his darker side emerges, it feels
               more like a plot contrivance than a naturally unfolding character
               trait, robbing the story of its emotional depth.
+              <br />
               <br /> Blake Lively, cast as Lily Bloom, brings her usual grace
               and screen presence to the role, but struggles to convey the
               emotional depth required for such a layered character. Lily’s
@@ -69,7 +72,9 @@ function ItendswithusReview() {
               Unfortunately, while Lively’s performance is sincere, it lacks the
               intensity and vulnerability needed to truly capture Lily’s
               emotional journey, leaving much of her struggle feeling muted.
-              <br /> Justin Baldoni, who also directs, takes on the role of Ryle
+              <br />
+              <br />
+              Justin Baldoni, who also directs, takes on the role of Ryle
               Kincaid, a charming neurosurgeon with a dangerous edge. His
               portrayal of Ryle, however, lacks nuance; the shift from loving
               boyfriend to abusive partner feels abrupt and unconvincing. The
@@ -77,17 +82,20 @@ function ItendswithusReview() {
               emotional impact of the film’s key moments, which feel more forced
               than inevitable.
               <br />
+              <br />
               Brandon Sklenar plays Atlas Corrigan, Lily’s childhood friend and
               potential love interest, and though he brings warmth to the role,
               his character is woefully underdeveloped. Atlas, meant to serve as
               a beacon of hope and contrast to Ryle, is sidelined, reducing his
               character to little more than a narrative tool rather than a fully
               realized person with depth and complexity.
+              <br />
               <br /> Supporting roles from Jenny Slate and Hasan Minhaj provide
               light moments as Allysa and Marshall, but their characters feel
               like peripheral additions rather than integral to the storyline.
               While their presence adds some levity, their contributions do
               little to enhance the film’s emotional weight.
+              <br />
               <br /> Baldoni’s direction, while competent, struggles to capture
               the emotional gravity necessary for a story centered around such
               heavy themes. The film’s tone wavers inconsistently between
@@ -106,7 +114,7 @@ function ItendswithusReview() {
       <div className="flex justify-center mt-3">
         <button
           onClick={toggleExpand}
-          className="text-white homeIntro rounded-lg px-4 py-2 mb-5 opacity-80 hover:opacity-100"
+          className="text-white border-[1px] text-xs homeIntro rounded-lg px-4 py-2 mb-5 opacity-80 hover:opacity-100"
         >
           {isExpanded ? "Read Less" : "Read More"}
         </button>

@@ -20,82 +20,78 @@ function BadboysReview() {
               Acting : 7
             </div>
             <div className="text-xs mt-3 text-zinc-300 font-medium">
-              Filmmaking/VFX : 7
+              Filmmaking/VFX : 8
             </div>
             <div className="text-xs mt-3 text-zinc-300 font-medium">
-              Plot/Screenplay : 8
+              Plot/Screenplay : 7
             </div>
             <div className="text-xs mt-3 text-zinc-300 font-medium">
-              Rewatchability : 6
+              Rewatchability : 7
             </div>
             <div className="text-xs mt-3 text-zinc-300 font-medium">
-              Overall : 7
+              Overall : 7.25
             </div>
           </div>
         </div>
       </div>
       <div className="flex justify-center mt-6 text-white">
         <div className="w-10/12 mt-5 text-sm text-justify">
-          It Ends with Us, directed by Justin Baldoni and adapted from Colleen
-          Hoover’s best-selling novel, had the potential to deliver a poignant
-          exploration of love, trauma, and resilience. However, despite its
-          strong source material and a star-studded cast, the film ultimately
-          falls short, leaving viewers with a disappointing and somewhat
-          superficial experience.
-          <br /> A significant issue lies in the adaptation. The novel, praised
-          for its raw and honest depiction of domestic abuse and the complex
-          emotions surrounding such relationships, loses much of its impact in
-          the film. Christy Hall’s screenplay attempts to compress a deeply
-          emotional and layered narrative into a two-hour runtime, but in doing
-          so, it strips away much of the depth and nuance that made the book so
-          compelling.
+          "Bad Boys Ride or Die" dazzles with its larger-than-life action
+          sequences, constantly raising the stakes and delivering
+          adrenaline-fueled moments that keep viewers hooked. The prison fight
+          scene stands out with its brutal, high-intensity violence, keeping
+          audiences riveted. A helicopter sequence is especially gripping,
+          overflowing with suspense and ensuring total viewer engagement. The
+          film's final act is its crowning achievement, featuring explosive yet
+          grounded action that leads to a thoroughly satisfying conclusion.
+          <br />
+          <br />
+          Cinematography plays a key role in making the action unforgettable, as
+          directors Adil and Bilall infuse the film with a distinct and
+          immersive visual style. One standout moment features Will Smith’s
+          character wielding a gun, as the perspective shifts seamlessly from
+          first-person to second-person mid-action, evoking the feel of a video
+          game. The directors also pay tribute to Michael Bay with signature
+          low-angle rotating shots, blending homage with their own creative
+          flair.
+          <br />
           <br />
           {/* Normally invisible but can be expanded if needed */}
           {isExpanded && (
             <>
-              The pacing of the film feels rushed, particularly in the
-              development of Lily and Ryle’s relationship. What starts with
-              initial charm and chemistry quickly escalates, leaving little
-              space for the audience to fully grasp the complexities of their
-              bond. Ryle’s character remains largely underexplored beyond his
-              surface-level appeal, and when his darker side emerges, it feels
-              more like a plot contrivance than a naturally unfolding character
-              trait, robbing the story of its emotional depth.
-              <br /> Blake Lively, cast as Lily Bloom, brings her usual grace
-              and screen presence to the role, but struggles to convey the
-              emotional depth required for such a layered character. Lily’s
-              internal conflict—her deep love for Ryle and her fear of becoming
-              ensnared in an abusive relationship—is essential to the narrative.
-              Unfortunately, while Lively’s performance is sincere, it lacks the
-              intensity and vulnerability needed to truly capture Lily’s
-              emotional journey, leaving much of her struggle feeling muted.
-              <br /> Justin Baldoni, who also directs, takes on the role of Ryle
-              Kincaid, a charming neurosurgeon with a dangerous edge. His
-              portrayal of Ryle, however, lacks nuance; the shift from loving
-              boyfriend to abusive partner feels abrupt and unconvincing. The
-              absence of a gradual character development diminishes the
-              emotional impact of the film’s key moments, which feel more forced
-              than inevitable.
+              The chemistry between Will Smith and Martin Lawrence is a standout
+              feature, as the two effortlessly play off each other with
+              impeccable comedic timing and a palpable sense of camaraderie.
+              Their playful banter and strong friendship are convincingly
+              portrayed, giving the film its heart. Smith’s character takes
+              center stage with a deeper exploration of his internal struggles,
+              allowing him to flex his dramatic acting chops while still shining
+              in his action-hero moments. Despite this shift in focus, the film
+              never loses its balance, as Smith remains as charismatic and
+              engaging as ever. Dennis Greene, who plays Reggie, steals the
+              spotlight in his scenes, delivering some of the film's most
+              memorable moments and drawing the loudest cheers from the
+              audience.
               <br />
-              Brandon Sklenar plays Atlas Corrigan, Lily’s childhood friend and
-              potential love interest, and though he brings warmth to the role,
-              his character is woefully underdeveloped. Atlas, meant to serve as
-              a beacon of hope and contrast to Ryle, is sidelined, reducing his
-              character to little more than a narrative tool rather than a fully
-              realized person with depth and complexity.
-              <br /> Supporting roles from Jenny Slate and Hasan Minhaj provide
-              light moments as Allysa and Marshall, but their characters feel
-              like peripheral additions rather than integral to the storyline.
-              While their presence adds some levity, their contributions do
-              little to enhance the film’s emotional weight.
-              <br /> Baldoni’s direction, while competent, struggles to capture
-              the emotional gravity necessary for a story centered around such
-              heavy themes. The film’s tone wavers inconsistently between
-              lighthearted romance and intense drama, creating an uneven
-              narrative that makes it difficult for the audience to fully invest
-              in the characters or their struggles. This tonal inconsistency
-              disrupts the emotional arc of the film, leaving viewers uncertain
-              about how to feel in crucial moments.
+              <br /> One notable flaw in *Bad Boys Ride or Die* is its uneven
+              use of comedic relief. While the film has its share of genuinely
+              funny moments, some jokes miss the mark. For instance, a scene
+              involving Martin Lawrence and a gator falls flat, leading to
+              awkward silence in the theater. This problem arises throughout the
+              movie, with certain jokes overstaying their welcome or feeling
+              unnecessary. The film struggles to strike the right balance
+              between humor and tension, occasionally resulting in awkward
+              pacing. A more restrained approach to the comedy would have
+              heightened the impact of the film’s more intense moments.
+              <br />
+              <br /> Another issue is the character change for Martin Lawrence’s
+              character, which feels contrived and seems like an excuse to use
+              visual effects. This change makes the film feel more animated and
+              out of place for a buddy cop movie. The closest comparison would
+              be Tyrese’s character in “Fast 9,” which also felt out of sync
+              with the rest of the film. A scene involving Lawrence and some
+              juice, for example, feels silly and unnecessary, more suited for a
+              blooper reel than the final cut.
             </>
           )}
         </div>
@@ -106,7 +102,7 @@ function BadboysReview() {
       <div className="flex justify-center mt-3">
         <button
           onClick={toggleExpand}
-          className="text-white homeIntro rounded-lg px-4 py-2 mb-5 opacity-80 hover:opacity-100"
+          className="text-white border-[1px] text-xs homeIntro rounded-lg px-4 py-2 mb-5 opacity-80 hover:opacity-100"
         >
           {isExpanded ? "Read Less" : "Read More"}
         </button>
