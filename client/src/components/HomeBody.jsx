@@ -46,7 +46,7 @@ function HomeBody() {
                             <path d="M7.05 3.691c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.372 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.539 1.118l-2.8-2.034a1 1 0 00-1.176 0l-2.8 2.034c-.783.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.363-1.118L.98 9.483c-.784-.57-.381-1.81.587-1.81H5.03a1 1 0 00.95-.69L7.05 3.69z" />
                           </svg>
                         </dt>
-                        <dd>7.4</dd>
+                        <dd>8</dd>
                       </div>
                       <div className="dark:text-slate-200">
                         <dt className="sr-only">Rating</dt>
@@ -101,7 +101,10 @@ function HomeBody() {
 
               {/* It Ends With Us */}
 
-              <div className="homeIntro rounded-lg p-2 w-full">
+              <Link
+                to="/ItendswithusReview"
+                className="homeIntro rounded-lg p-2 w-full"
+              >
                 <article className="p-3 space-x-4 items-start sm:space-x-6 lg:space-x-4 xl:space-x-6 flex">
                   <img
                     src="/itendswithus.jpg"
@@ -124,7 +127,7 @@ function HomeBody() {
                             <path d="M7.05 3.691c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.372 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.539 1.118l-2.8-2.034a1 1 0 00-1.176 0l-2.8 2.034c-.783.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.363-1.118L.98 9.483c-.784-.57-.381-1.81.587-1.81H5.03a1 1 0 00.95-.69L7.05 3.69z" />
                           </svg>
                         </dt>
-                        <dd>7.1</dd>
+                        <dd>7</dd>
                       </div>
                       <div className="dark:text-slate-200">
                         <dt className="sr-only">Rating</dt>
@@ -175,11 +178,14 @@ function HomeBody() {
                     </dl>
                   </div>
                 </article>
-              </div>
+              </Link>
 
               {/* Badboys */}
 
-              <div className="homeIntro rounded-lg p-2 w-full">
+              <Link
+                to="/BadboysReview"
+                className="homeIntro rounded-lg p-2 w-full"
+              >
                 <article className="p-3 space-x-4 items-start sm:space-x-6 lg:space-x-4 xl:space-x-6 flex">
                   <img
                     src="/badboys.jpg"
@@ -253,7 +259,7 @@ function HomeBody() {
                     </dl>
                   </div>
                 </article>
-              </div>
+              </Link>
 
               {/* The Beast Within  */}
 
