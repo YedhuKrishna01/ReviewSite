@@ -3,8 +3,9 @@ import Navbar from "../../components/Navbar";
 
 function TVshowBody() {
   return (
-    <div>
+    <div className="text-white">
       <Navbar />
+      TV Shows will be displayed here
     </div>
   );
 }

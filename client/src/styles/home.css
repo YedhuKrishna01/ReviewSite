@@ -24,4 +24,6 @@
     height: 2.5rem;
     width: 2.5rem;
 }
-
+.intro{
+    background-color: rgba(0, 0, 0, 0.097);
+}

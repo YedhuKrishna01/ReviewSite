@@ -5,17 +5,41 @@ import HomeSeries from "./HomeSeries";
 import { Link } from "react-router-dom";
 
 function HomeBody() {
+  const movieSectionRef = useRef(null);
+
+  const scrollToSection = (ref) => {
+    ref.current.scrollIntoView({ behavior: "smooth" });
+  };
+
   return (
     <div>
-      <div className="h-64 flex flex-col justify-center items-center relative text-white">
-        <div className="text-3xl text-center font-semibold">
-          Hello, fellow movie fanatics
+      <div className="h-64 rounded-3xl flex flex-col intro justify-center items-center relative text-white">
+        <div className="text-2xl w-9/12 text-center font-semibold">
+          Welcome,
+          <br /> Film connoisseurs!
         </div>
-        <div className="text-xl font-thin">
-          Some subtext here for the intro.
+        <div className="text-xl tracking-normal font-light text-zinc-400">
+          Let's talk about "Entertainment"
         </div>
-        <div className="absolute h-auto w-full flex flex-col gap-y-4 md:gap-y-6 items-center top-52 left-0">
-          <div className="text-xl w-10/12 font-semilight text-center">
+        <div className="flex mt-3 gap-x-10">
+          <button
+            onClick={() => scrollToSection(movieSectionRef)}
+            className="rounded-md font-medium w-28 px-3 py-2"
+            style={{ backgroundColor: "#32001f" }}
+          >
+            Movies
+          </button>
+
+          <Link
+            to="/TVshows"
+            className="text-center rounded-md font-medium w-28 px-3 py-2"
+            style={{ backgroundColor: "#32001f" }}
+          >
+            Series
+          </Link>
+        </div>
+        <div className="absolute mt-14 h-auto w-full flex flex-col gap-y-4 md:gap-y-6 items-center top-52 left-0">
+          <div className="text-xl rounded-t-lg underline underline-offset-4 decoration-1 w-6/12 p-2 font-semilight text-center">
             Latest Reviews
           </div>
           <div className="flex w-10/12 items-center relative">
@@ -411,13 +435,13 @@ function HomeBody() {
                           >
                             <circle cx="1" cy="1" r="1" />
                           </svg>
-                          1h 26m
+                          1h 52m
                         </dd>
                       </div>
                       <div className="flex-none w-full mt-2 font-normal text-nowrap overflow-hidden">
                         <dt className="sr-only">Cast</dt>
                         <dd className="text-slate-400">
-                          Maika Monroe, Nicolas Cage
+                          Nicolas Cage, Maika Monroe
                         </dd>
                       </div>
                     </dl>
@@ -497,7 +521,7 @@ function HomeBody() {
                       </div>
                       <div className="flex-none w-full mt-2 font-normal text-nowrap overflow-hidden">
                         <dt className="sr-only">Cast</dt>
-                        <dd className="text-slate-400">
+                        <dd ref={movieSectionRef} className="text-slate-400">
                           Amy Poehler, Maya Hawke
                         </dd>
                       </div>
