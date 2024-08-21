@@ -1,5 +1,6 @@
 import { useRef, useState } from "react";
 import "../styles/home.css";
+import { Link } from "react-router-dom";
 
 function HomeMovieList() {
   const slideRef = useRef(null);
@@ -128,8 +129,9 @@ function HomeMovieList() {
             style={{ gridTemplateRows: "repeat(2, 1fr)" }}
           >
             {slide.map((movie, idx) => (
-              <div
-                className="rounded-lg relative movie-card"
+              <Link
+                to={movie.title + "Review"}
+                className="rounded-lg relative"
                 key={idx}
                 style={{
                   backgroundImage: `url(${movie.image})`,
@@ -147,7 +149,7 @@ function HomeMovieList() {
                     <div className="text-xs px-1">{movie.duration}</div>
                   </div>
                 </div>
-              </div>
+              </Link>
             ))}
           </div>
         ))}

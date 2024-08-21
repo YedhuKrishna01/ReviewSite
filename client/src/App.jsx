@@ -6,6 +6,9 @@ import BadboysReview from "./pages/BadboysReview";
 import ThebeastwithinReview from "./pages/ThebeastwithinReview";
 import LonglegsReview from "./pages/LonglegsReview";
 import InsideoutReview from "./pages/InsideoutReview";
+import AadujeevithamReview from "./pages/AadujeevithamReview.jsx";
+import TarrotReview from "./pages/TarrotReview.jsx";
+import ShaitaanReview from "./pages/ShaitaanReview.jsx";
 import TVshowBody from "./pages/TVshows/TVshowBody";
 
 function App() {
@@ -22,6 +25,9 @@ function App() {
         />
         <Route path="/LonglegsReview" element={<LonglegsReview />} />
         <Route path="/InsideoutReview" element={<InsideoutReview />} />
+        <Route path="/AadujeevithamReview" element={<AadujeevithamReview />} />
+        <Route path="/TarrotReview" element={<TarrotReview />} />
+        <Route path="/ShaitaanReview" element={<ShaitaanReview />} />
         <Route path="/TVshows" element={<TVshowBody />} />
       </Routes>
     </BrowserRouter>
