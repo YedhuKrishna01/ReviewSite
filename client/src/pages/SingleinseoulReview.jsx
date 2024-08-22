@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import Navbar from "../components/Navbar";
 
-function ShaitaanReview() {
+function SingleInSeoulReview() {
   const [isExpanded, setIsExpanded] = useState(false);
 
   const toggleExpand = () => {
@@ -13,77 +13,73 @@ function ShaitaanReview() {
       <Navbar />
       <div className="text-white mt-5 flex justify-center">
         <div className="w-10/12 homeIntro flex rounded-lg p-6">
-          <img src="/shaitaan.jpg" className="h-48 rounded-lg" />
+          <img src="/singleinseoul.jpg" className="h-48 rounded-lg" />
           <div className="flex flex-col pl-4">
-            <div className="text-base font-semibold">Shaitaan</div>
+            <div className="text-base font-semibold">Single in Seoul</div>
             <div className="text-xs mt-3 text-zinc-300 font-medium">
-              Acting : 8.5
+              Acting : 6.5
             </div>
             <div className="text-xs mt-3 text-zinc-300 font-medium">
-              Filmmaking/VFX : 9
+              Filmmaking/VFX : 7
             </div>
             <div className="text-xs mt-3 text-zinc-300 font-medium">
-              Plot/Screenplay : 8.5
+              Plot/Screenplay : 7
             </div>
             <div className="text-xs mt-3 text-zinc-300 font-medium">
-              Rewatchability : 8
+              Rewatchability : 7
             </div>
             <div className="text-xs mt-3 text-zinc-300 font-medium">
-              Overall : 8.5
+              Overall : 6.87
             </div>
           </div>
         </div>
       </div>
       <div className="flex justify-center mt-6 text-white">
         <div className="w-10/12 mt-5 text-sm text-justify">
-          The story of Shaitaan revolves around a family of four. Ajay Devgn
-          essays the role of Kabir, a hard-working CA who loves his family a
-          lot. Jyothika is seen in the role of his caring wife, Jyoti. Janki
-          Bodiwala and Anngad Raaj, who were also a part of the Gujarati film,
-          essay the role of their daughter and son. Things take a drastic turn
-          in their lives when a strange man named Vanraj (R Madhavan) enters
-          their house and hypnotises the daughter into doing everything he says.
-          The rest of the film explores how Kabir does everything in his
-          capacity to save his kid. The trailer of this 2024 movie looked quite
-          promising but the review of Shaitaan might beg to differ.
+          The story revolves around two people who have different temperament
+          and lifestyle. They meet via an essay about single life, and then old
+          memories are rekindled, opening the past wounds. Park Yeong-ho (Lee
+          Dong-wook) is an instructor and influencer with 300,000 followers, who
+          enjoys being single. Joo Hyeon-jin (Im Soo-jung) is Park Yeong-ho's
+          college junior and an editor-in-chief of a publishing company and
+          in-charge of the essay series titled “Single in the City”
           <br />
           <br />
-          Credit where it is due, Vikas Bahl has a very abstract way of cutting
-          the trailers of his movies that make the film look intriguing. He did
-          something very similar with Shaitaan which has helped in drawing
-          people’s attention to the film. The horror film, which promises
-          maximum drama through its first glimpse, has several moments where you
-          might find yourself on the edge of your seat, something that you
-          expect from a horror movie. The film has been shot well. Considering
-          that most of the scenes take place in just one room, the story has so
-          many elements that you might not notice the bland screenplay.
+          Park Ji-yoon writing was not upto the mark but the performance of the
+          actors were well received by the audience. It was the actors
+          passionate performances that saved the somewhat sloppy story. Park
+          Jae-hwan wrote in review that "the film shows the sensibility between
+          coldness and passion and does not have the same gap as "Men are from
+          Venus, Women are from Mars"." Park praised the performances of Lee
+          Dong-wook and Lim Soo-jung, Jang Hyun-seong, Kim Ji-young, Lee Mi-do,
+          Ji I-soo, and Lee Sang-i. Park concluded, "It cannot be denied that
+          this is a work that reveals the true skills of Myeong Film.
           <br />
           <br />
           {/* Normally invisible but can be expanded if needed */}
           {isExpanded && (
             <>
-              R Madhavan is driving the film with his stellar performance with
-              Ajay Devgn sharing a great camaraderie with him. Jyothika, Janki
-              and Anngad also did a great job with their roles and delivered
-              certain scenes in such an effortless manner that you might end up
-              liking the film just because of them. The climax is what makes up
-              for the entire dull buildup, so we suggest you sit through the
-              film to see what happens in the end.
+              "Single in Seoul" is a candid portrayal of love and relationships,
+              brought to life by an exceptional cast and punctuated by
+              heartwarming moments. The film beautifully illustrates how every
+              story has multiple perspectives, emphasizing the importance of
+              letting go, cherishing fond memories, and embracing new
+              opportunities for love. With its blend of humour, warmth, and
+              relatable characters, "Single in Seoul" is a delightful cinematic
+              experience that will leave audiences smiling.
               <br />
               <br />
-              The narrative maintains a good pace and the treatment makes the
-              movie gripping for the most part, although things gets a tad
-              monotonous in the second half. Albeit not too suspenseful, the
-              buildup is unnerving. The story has some unconvincing elements,
-              and one scene gives away a pivotal plot point, which makes the
-              climax predictable. Cinematographer Sudhakar Reddy Yakkanti excels
-              in creating an atmosphere of dread and darkness, further enhanced
-              by Amit Trivedi’s music.
+              What the movie really lacks is the element of surprise since the
+              plot is as cliche as it can be and some of the outcomes are so
+              predictable throughout the movie.
               <br />
               <br />
-              Even though Shaitaan’s narrative stumbles at times, the masterful
-              use of atmosphere and top-notch acting elevate it into an
-              unsettling experience worth having.
+              Even though It may not be the best at it's genre, it indeed put a
+              smile on people's face and that's all that matter for a "Feel
+              good" movie. Some of the wholesome moments in the movie are
+              somewhat realistic and gives the movie a lot of room for coming
+              back to those scenes again which is also one of the good thing
+              about this movie.
             </>
           )}
         </div>
@@ -103,4 +99,4 @@ function ShaitaanReview() {
   );
 }
 
-export default ShaitaanReview;
+export default SingleInSeoulReview;

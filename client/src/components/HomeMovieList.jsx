@@ -14,57 +14,84 @@ function HomeMovieList() {
       year: 2024,
       duration: "2hr 52m",
       image: "/goatlife.jpg",
+      siteName: "Aadujeevitham",
     },
-    { title: "Tarrot", year: 2024, duration: "1hr 32m", image: "/tarrot.jpg" },
+    {
+      title: "Tarrot",
+      year: 2024,
+      duration: "1hr 32m",
+      image: "/tarrot.jpg",
+      siteName: "Tarrot",
+    },
     {
       title: "Shaitaan",
       year: 2024,
       duration: "2hr 08m",
       image: "/shaitaan.jpg",
+      siteName: "Shaitaan",
     },
     {
       title: "Single in Seoul",
       year: 2023,
       duration: "1hr 43m",
       image: "/singleinseoul.jpg",
+      siteName: "SingleInSeoul",
     },
     {
       title: "Kingdom of the Planet of the Apes",
       year: 2024,
       duration: "2hr 25m",
       image: "/kingdomofapes.jpg",
+      siteName: "KingdomofthePlanetoftheApes",
     },
     {
       title: "The Intern",
       year: 2015,
       duration: "2hr 01m",
       image: "/intern.jpg",
+      siteName: "TheIntern",
     },
     {
       title: "Dear Zindagi",
       year: 2016,
       duration: "2hr 31m",
       image: "/dearzindagi.jpg",
+      siteName: "DearZindagi",
     },
     {
       title: "A Song from the Dark",
       year: 2023,
       duration: "1hr 45m",
       image: "/asongfromthedark.jpg",
+      siteName: "ASongfromtheDark",
     },
-    { title: "Gifted", year: 2017, duration: "1hr 41m", image: "/gifted.jpg" },
-    { title: "Jailer", year: 2023, duration: "2hr 45m", image: "/jailer.jpg" },
+    {
+      title: "Gifted",
+      year: 2017,
+      duration: "1hr 41m",
+      image: "/gifted.jpg",
+      siteName: "Gifted",
+    },
+    {
+      title: "Jailer",
+      year: 2023,
+      duration: "2hr 45m",
+      image: "/jailer.jpg",
+      siteName: "Jailer",
+    },
     {
       title: "Top Gun: Maverick",
       year: 2022,
       duration: "2hr 11m",
       image: "/maverick.jpg",
+      siteName: "TopGunMaverick",
     },
     {
       title: "Avatar: The Way of Water",
       year: 2022,
       duration: "2hr 32m",
       image: "/avatar2.jpg",
+      siteName: "Avatar2",
     },
   ];
 
@@ -130,7 +157,7 @@ function HomeMovieList() {
           >
             {slide.map((movie, idx) => (
               <Link
-                to={movie.title + "Review"}
+                to={movie.siteName + "Review"}
                 className="rounded-lg relative"
                 key={idx}
                 style={{
