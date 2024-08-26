@@ -10,19 +10,19 @@ function Navbar() {
 
   return (
     <div>
-      <div className="flex h-20 p-5">
-        <div className="text-white p-2 font-medium text-2xl w-4/6">
+      <div className="grid grid-cols-12 h-24 pt-8">
+        <div className="text-white col-start-2 py-2 font-medium text-2xl ">
           <Link className="ml-2" to="/">
             Reseña.
           </Link>
         </div>
-        <div className="w-2/6 p-2 flex justify-end">
+        <div className="col-start-10 col-span-2 pt-1 flex justify-end">
           <svg
             onClick={handleIconClick}
             xmlns="http://www.w3.org/2000/svg"
-            height="35px"
+            height="30px"
             viewBox="0 -960 960 960"
-            width="35px"
+            width="30px"
             fill="#e8eaed"
             className={`transform transition-transform duration-700 ${
               isMenuOpen ? "rotate-180" : ""
@@ -39,20 +39,20 @@ function Navbar() {
           isMenuOpen ? "max-h-40" : "max-h-0"
         }`}
       >
-        <div className="text-white w-10/12 py-5 px-2">
+        <div className="text-white text-sm w-10/12 py-1 px-2">
           <ul className="space-y-2">
             <li>
-              <Link to="/tv-shows" className="hover:underline">
+              <Link to="/" className="hover:underline">
                 Home
               </Link>
             </li>
             <li>
-              <Link to="/tv-shows" className="hover:underline">
+              <Link to="/TVshows" className="hover:underline">
                 TV Shows
               </Link>
             </li>
             <li>
-              <Link to="/recommendations" className="hover:underline">
+              <Link to="/Contact" className="hover:underline">
                 Contact
               </Link>
             </li>

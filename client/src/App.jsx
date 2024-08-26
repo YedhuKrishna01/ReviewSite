@@ -19,6 +19,8 @@ import JailerReview from "./pages/JailerReview.jsx";
 import TopGunMaverickReview from "./pages/TopGunMaverickReview.jsx";
 import Avatar2Review from "./pages/Avatar2Review.jsx";
 import TVshowBody from "./pages/TVshows/TVshowBody";
+import HOTDReview from "./pages/TVshows/HOTDReview.jsx";
+import BlackOutReview from "./pages/TVshows/BlackOutReview.jsx";
 
 function App() {
   return (
@@ -56,6 +58,8 @@ function App() {
         />
         <Route path="/Avatar2Review" element={<Avatar2Review />} />
         <Route path="/TVshows" element={<TVshowBody />} />
+        <Route path="/HOTDReview" element={<HOTDReview />} />
+        <Route path="/BlackOutReview" element={<BlackOutReview />} />
       </Routes>
     </BrowserRouter>
   );
