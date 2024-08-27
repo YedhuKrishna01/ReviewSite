@@ -24,16 +24,14 @@ function HomeBody() {
         <div className="flex mt-3 gap-x-10">
           <button
             onClick={() => scrollToSection(movieSectionRef)}
-            className="rounded-md font-medium w-28 px-3 py-2"
-            style={{ backgroundColor: "#32001f" }}
+            className="rounded-md font-medium w-28 px-3 bg-red-900 py-2"
           >
             Movies
           </button>
 
           <Link
             to="/TVshows"
-            className="text-center rounded-md font-medium w-28 px-3 py-2"
-            style={{ backgroundColor: "#32001f" }}
+            className="text-center rounded-md font-medium bg-red-900 w-28 px-3 py-2"
           >
             Series
           </Link>

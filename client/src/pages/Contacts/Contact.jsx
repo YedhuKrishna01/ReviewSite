@@ -43,67 +43,54 @@ function Contact() {
   return (
     <div>
       <Navbar />
-      <div className="grid outer grid-cols-12">
-        <div className="col-start-2 col-span-10 flex flex-col justify-center items-center h-full text-center font-audio tablet:text-3xl laptop:text-4xl text-white mt-5">
-          <div>Would you like to contact/hire me?</div>
-          <section className="flex shadowsLg mb-10 mt-10 rounded-md w-full tablet:w-5/6 laptop:w-8/12 desktop:w-6/12 laptop:p-14 tablet:mt-14 h-auto p-7">
+      <div className="grid h-[87vh] grid-cols-12">
+        <div className="col-start-2 col-span-10 flex flex-col justify-center items-center text-center text-white pt-12">
+          <div className="text-2xl">Which movie should I review next?</div>
+          <section className="flex homeIntro mt-6 rounded-md w-full h-auto p-7">
             <form
               onSubmit={onSubmit}
-              className="flex flex-col text-left space-y-2 tablet:space-y-6 desktop:space-y-3 w-full"
+              className="flex flex-col text-left space-y-4 w-full"
             >
               <div>
-                <label
-                  className="tablet:text-2xl laptop:text-3xl desktop:text-xl"
-                  htmlFor="name"
-                >
-                  Name
-                </label>
+                <label htmlFor="name">need changes here</label>
                 <br />
                 <input
                   type="text"
                   id="name"
                   name="name"
-                  className="p-2 rounded-md mt-1 bg-zinc-900 font-mont text-sm tablet:text-xl laptop:text-2xl placeholder:pl-1 placeholder:text-sm placeholder:font-mont tablet:placeholder:text-lg laptop:placeholder:text-2xl tablet:mt-3 laptop:mt-5 desktop:mt-2 desktop:placeholder:text-xl desktop:text-xl w-full"
+                  className="rounded-md w-full bg-transparent border-[1px] border-white p-2 placeholder:text-sm placeholder:pl-2 placeholder:text-zinc-300 text-sm mt-2"
                   placeholder="Enter your name"
                   required
                 />
               </div>
               <div>
-                <label
-                  className="tablet:text-2xl laptop:text-3xl desktop:text-xl"
-                  htmlFor="email"
-                >
-                  Email
-                </label>
+                <label htmlFor="email">change here too Email</label>
                 <br />
                 <input
                   type="email"
                   id="email"
                   name="email"
-                  className="p-2 rounded-md mt-1  bg-zinc-900 font-mont text-sm tablet:text-xl laptop:text-2xl placeholder:pl-1 placeholder:text-sm placeholder:font-mont tablet:placeholder:text-lg laptop:placeholder:text-2xl tablet:mt-3 laptop:mt-5 desktop:mt-2 desktop:placeholder:text-xl desktop:text-xl w-full"
+                  className="rounded-md w-full bg-transparent border-[1px] border-white p-2 placeholder:text-sm placeholder:pl-2 placeholder:text-zinc-300 text-sm mt-2"
                   placeholder="Enter your email"
                   required
                 />
               </div>
               <div>
-                <label
-                  className="tablet:text-2xl laptop:text-3xl desktop:text-xl"
-                  htmlFor="message"
-                >
-                  Write your message
+                <label htmlFor="message">
+                  here as well Write your suggestion
                 </label>
                 <br />
                 <textarea
                   id="message"
                   name="message"
-                  className="p-2 rounded-md mt-1 h-[30vh] resize-none bg-zinc-900 text-sm tablet:text-xl laptop:text-2xl font-mont placeholder:pl-1 placeholder:text-sm placeholder:font-mont tablet:placeholder:text-lg laptop:placeholder:text-2xl tablet:mt-3 laptop:mt-5 desktop:mt-2 desktop:placeholder:text-xl desktop:text-xl w-full"
-                  placeholder="Enter your message"
+                  className="rounded-md h-[30vh] resize-none w-full bg-transparent border-[1px] border-white p-2 placeholder:text-sm placeholder:pl-2 placeholder:text-zinc-300 text-sm mt-2"
+                  placeholder="Enter your suggestion"
                   required
                 ></textarea>
                 <br />
                 <button
                   type="submit"
-                  className="mt-5 cursor-pointer tablet:text-2xl desktop:text-xl w-full bg-red text-white rounded-md  py-2 px-4"
+                  className="mt-5 cursor-pointer w-full bg-red-900 text-white rounded-md  py-2 px-4"
                 >
                   Send
                 </button>
