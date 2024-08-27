@@ -21,6 +21,11 @@ import Avatar2Review from "./pages/Avatar2Review.jsx";
 import TVshowBody from "./pages/TVshows/TVshowBody";
 import HOTDReview from "./pages/TVshows/HOTDReview.jsx";
 import BlackOutReview from "./pages/TVshows/BlackOutReview.jsx";
+import MayorOfKingstownReview from "./pages/TVshows/MayorOfKingstownReview.jsx";
+import PresumedInnocentReview from "./pages/TVshows/PresumedInnocentReview.jsx";
+import SweetHomeReview from "./pages/TVshows/SweetHomeReview.jsx";
+import Xmen1997Review from "./pages/TVshows/Xmen1997Review.jsx";
+import Contact from "./pages/Contacts/Contact.jsx";
 
 function App() {
   return (
@@ -60,6 +65,17 @@ function App() {
         <Route path="/TVshows" element={<TVshowBody />} />
         <Route path="/HOTDReview" element={<HOTDReview />} />
         <Route path="/BlackOutReview" element={<BlackOutReview />} />
+        <Route
+          path="/MayorOfKingstownReview"
+          element={<MayorOfKingstownReview />}
+        />
+        <Route
+          path="/PresumedInnocentReview"
+          element={<PresumedInnocentReview />}
+        />
+        <Route path="/SweetHomeReview" element={<SweetHomeReview />} />
+        <Route path="/Xmen1997Review" element={<Xmen1997Review />} />
+        <Route path="/Contact" element={<Contact />} />
       </Routes>
     </BrowserRouter>
   );

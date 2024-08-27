@@ -13,7 +13,7 @@ function HomeBody() {
 
   return (
     <div>
-      <div className="h-64 rounded-3xl flex flex-col intro justify-center items-center relative text-white">
+      <div className="h-64 rounded-3xl flex flex-col intro justify-center items-center relative text-white mt-3">
         <div className="text-2xl w-9/12 text-center font-semibold">
           Welcome,
           <br /> Film connoisseurs!
