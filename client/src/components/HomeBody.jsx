@@ -21,32 +21,32 @@ function HomeBody() {
         <div className="text-xl tablet:text-2xl tracking-normal font-light text-zinc-400">
           Let's talk about "Entertainment"
         </div>
-        <div className="flex mt-3 gap-x-10">
+        <div className="flex mt-3 tablet:mt-5 gap-x-10 tablet:gap-x-14">
           <button
             onClick={() => scrollToSection(movieSectionRef)}
-            className="rounded-md font-medium w-28 px-3 bg-red-900 hover:bg-red-800 py-2"
+            className="text-center rounded-md tablet:text-xl font-medium w-36 px-3 bg-red-900 hover:bg-red-800 py-2 tablet:px-5"
           >
             Movies
           </button>
 
           <Link
             to="/TVshows"
-            className="text-center rounded-md font-medium bg-red-900 hover:bg-red-800 w-28 px-3 py-2"
+            className="text-center rounded-md tablet:text-xl font-medium w-36 px-3 bg-red-900 hover:bg-red-800 py-2 tablet:px-5"
           >
             Series
           </Link>
         </div>
-        <div className="absolute mt-14 tablet:mt-48 h-auto w-full flex flex-col gap-y-4 md:gap-y-6 items-center top-52 left-0">
-          <div className="text-xl rounded-t-lg underline underline-offset-4 decoration-1 w-6/12 p-2 font-semilight text-center">
+        <div className="absolute mt-14 tablet:mt-52 h-auto w-full flex flex-col gap-y-4 tablet:gap-y-8 items-center top-52 left-0">
+          <div className="text-xl tablet:text-3xl rounded-t-lg underline underline-offset-4 decoration-1 w-6/12 p-2 font-semilight text-center">
             Latest Reviews
           </div>
           <div className="flex w-10/12 items-center relative">
-            <div className="w-full flex flex-col gap-y-4">
+            <div className="w-full flex flex-col gap-y-4 tablet:gap-y-10">
               {/* deadpool & wolverine */}
 
               <Link
                 to="/DeadpoolReview"
-                className="homeIntro rounded-lg p-2 w-full"
+                className="homeIntro rounded-lg p-2 tablet:p-4 w-full"
               >
                 <article className="p-3 space-x-4 items-start sm:space-x-6 lg:space-x-4 xl:space-x-6 flex">
                   <img
@@ -56,13 +56,13 @@ function HomeBody() {
                     alt=""
                     width="100"
                     height="88"
-                    className="flex-none rounded-lg"
+                    className="flex-none tablet:w-32 rounded-lg"
                   />
                   <div className="min-w-0 relative flex-auto">
-                    <h2 className="font-semibold text-base text-slate-900 truncate sm:pr-20 dark:text-slate-100">
+                    <h2 className="font-semibold text-base tablet:text-2xl text-slate-900 truncate sm:pr-20 dark:text-slate-100">
                       Deadpool & Wolverine
                     </h2>
-                    <dl className="mt-2 flex flex-wrap text-xs leading-6 font-light">
+                    <dl className="mt-2 flex flex-wrap text-xs tablet:text-lg tablet:w-10/12 leading-6 tablet:leading-9 font-light">
                       <div className="hidden absolute top-0 right-0 sm:flex items-center space-x-1 dark:text-slate-100">
                         <dt className="text-red-800">
                           <span className="sr-only">Star rating</span>
@@ -112,7 +112,7 @@ function HomeBody() {
                           2h 07m
                         </dd>
                       </div>
-                      <div className="flex-none w-full mt-2 font-normal text-nowrap overflow-hidden">
+                      <div className="flex-none w-full mt-2 tablet:mt-0 font-normal text-nowrap overflow-hidden">
                         <dt className="sr-only">Cast</dt>
                         <dd className="text-slate-400">
                           Hugh Jackman, Ryan Reynolds
