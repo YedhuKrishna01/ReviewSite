@@ -52,19 +52,19 @@ function Contact() {
               className="flex flex-col text-left space-y-4 w-full"
             >
               <div>
-                <label htmlFor="name">need changes here</label>
+                <label htmlFor="name">Movie Name :</label>
                 <br />
                 <input
                   type="text"
                   id="name"
                   name="name"
                   className="rounded-md w-full bg-transparent border-[1px] border-white p-2 placeholder:text-sm placeholder:pl-2 placeholder:text-zinc-300 text-sm mt-2"
-                  placeholder="Enter your name"
+                  placeholder="Enter the movie name"
                   required
                 />
               </div>
               <div>
-                <label htmlFor="email">change here too Email</label>
+                <label htmlFor="email">Email :</label>
                 <br />
                 <input
                   type="email"
@@ -76,21 +76,18 @@ function Contact() {
                 />
               </div>
               <div>
-                <label htmlFor="message">
-                  here as well Write your suggestion
-                </label>
+                <label htmlFor="message">Have any message for me ?</label>
                 <br />
                 <textarea
                   id="message"
                   name="message"
                   className="rounded-md h-[30vh] resize-none w-full bg-transparent border-[1px] border-white p-2 placeholder:text-sm placeholder:pl-2 placeholder:text-zinc-300 text-sm mt-2"
-                  placeholder="Enter your suggestion"
-                  required
+                  placeholder="Enter your message"
                 ></textarea>
                 <br />
                 <button
                   type="submit"
-                  className="mt-5 cursor-pointer w-full bg-red-900 text-white rounded-md  py-2 px-4"
+                  className="mt-5 cursor-pointer w-full bg-red-900 hover:bg-red-800 text-white rounded-md  py-2 px-4"
                 >
                   Send
                 </button>

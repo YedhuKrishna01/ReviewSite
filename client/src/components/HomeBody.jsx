@@ -13,30 +13,30 @@ function HomeBody() {
 
   return (
     <div>
-      <div className="h-64 rounded-3xl flex flex-col intro justify-center items-center relative text-white mt-3">
-        <div className="text-2xl w-9/12 text-center font-semibold">
+      <div className="h-64 tablet:h-96 rounded-3xl flex flex-col intro justify-center items-center relative text-white mt-3 tablet:mt-8">
+        <div className="text-2xl tablet:text-4xl w-9/12 text-center font-semibold">
           Welcome,
           <br /> Film connoisseurs!
         </div>
-        <div className="text-xl tracking-normal font-light text-zinc-400">
+        <div className="text-xl tablet:text-2xl tracking-normal font-light text-zinc-400">
           Let's talk about "Entertainment"
         </div>
         <div className="flex mt-3 gap-x-10">
           <button
             onClick={() => scrollToSection(movieSectionRef)}
-            className="rounded-md font-medium w-28 px-3 bg-red-900 py-2"
+            className="rounded-md font-medium w-28 px-3 bg-red-900 hover:bg-red-800 py-2"
           >
             Movies
           </button>
 
           <Link
             to="/TVshows"
-            className="text-center rounded-md font-medium bg-red-900 w-28 px-3 py-2"
+            className="text-center rounded-md font-medium bg-red-900 hover:bg-red-800 w-28 px-3 py-2"
           >
             Series
           </Link>
         </div>
-        <div className="absolute mt-14 h-auto w-full flex flex-col gap-y-4 md:gap-y-6 items-center top-52 left-0">
+        <div className="absolute mt-14 tablet:mt-48 h-auto w-full flex flex-col gap-y-4 md:gap-y-6 items-center top-52 left-0">
           <div className="text-xl rounded-t-lg underline underline-offset-4 decoration-1 w-6/12 p-2 font-semilight text-center">
             Latest Reviews
           </div>

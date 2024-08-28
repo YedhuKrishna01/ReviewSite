@@ -30,6 +30,8 @@ import Contact from "./pages/Contacts/Contact.jsx";
 function App() {
   return (
     <BrowserRouter>
+      {/* This site is made as a web development learning project. The credit to any of the reviews mentioned in this site doesn't belongs to me. */}
+
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/DeadpoolReview" element={<DeadpoolReview />} />
