@@ -48,12 +48,12 @@ function HomeBody() {
                 to="/DeadpoolReview"
                 className="homeIntro rounded-lg p-2 tablet:p-4 w-full"
               >
-                <article className="p-3 space-x-4 items-start sm:space-x-6 lg:space-x-4 xl:space-x-6 flex">
+                <article className="p-3 space-x-4 items-start flex">
                   <img
                     src="/Deadpool.jpg"
                     loading="lazy"
                     decoding="async"
-                    alt=""
+                    alt="deadpool and wolverine"
                     width="100"
                     height="88"
                     className="flex-none tablet:w-32 rounded-lg"
@@ -62,8 +62,8 @@ function HomeBody() {
                     <h2 className="font-semibold text-base tablet:text-2xl text-slate-900 truncate sm:pr-20 dark:text-slate-100">
                       Deadpool & Wolverine
                     </h2>
-                    <dl className="mt-2 flex flex-wrap text-xs tablet:text-lg tablet:w-10/12 leading-6 tablet:leading-9 font-light">
-                      <div className="hidden absolute top-0 right-0 sm:flex items-center space-x-1 dark:text-slate-100">
+                    <dl className="mt-2 flex flex-wrap text-xs tablet:text-base tablet:w-10/12 leading-6 tablet:leading-9 font-light">
+                      <div className="hidden tablet:flex absolute top-28 left-0 items-center space-x-1 dark:text-slate-100">
                         <dt className="text-red-800">
                           <span className="sr-only">Star rating</span>
                           <svg width="16" height="20" fill="currentColor">
@@ -127,24 +127,24 @@ function HomeBody() {
 
               <Link
                 to="/ItendswithusReview"
-                className="homeIntro rounded-lg p-2 w-full"
+                className="homeIntro rounded-lg p-2 tablet:p-4 w-full"
               >
                 <article className="p-3 space-x-4 items-start sm:space-x-6 lg:space-x-4 xl:space-x-6 flex">
                   <img
                     src="/itendswithus.jpg"
                     loading="lazy"
                     decoding="async"
-                    alt=""
+                    alt="it ends with us"
                     width="100"
                     height="88"
-                    className="flex-none rounded-lg"
+                    className="flex-none tablet:w-32 rounded-lg"
                   />
                   <div className="min-w-0 relative flex-auto">
-                    <h2 className="font-semibold text-base text-slate-900 truncate sm:pr-20 dark:text-slate-100">
+                    <h2 className="font-semibold text-base tablet:text-2xl text-slate-900 truncate sm:pr-20 dark:text-slate-100">
                       It Ends With Us
                     </h2>
-                    <dl className="mt-2 flex flex-wrap text-xs leading-6 font-light">
-                      <div className="hidden absolute top-0 right-0 sm:flex items-center space-x-1 dark:text-slate-100">
+                    <dl className="mt-2 flex flex-wrap text-xs tablet:text-base tablet:w-10/12 leading-6 tablet:leading-9 font-light">
+                      <div className="hidden tablet:flex absolute top-28 left-0 items-center space-x-1 dark:text-slate-100">
                         <dt className="text-red-800">
                           <span className="sr-only">Star rating</span>
                           <svg width="16" height="20" fill="currentColor">
@@ -193,7 +193,7 @@ function HomeBody() {
                           2h 11m
                         </dd>
                       </div>
-                      <div className="flex-none w-full mt-2 font-normal text-nowrap overflow-hidden">
+                      <div className="flex-none w-full mt-2 tablet:mt-0 font-normal text-nowrap overflow-hidden">
                         <dt className="sr-only">Cast</dt>
                         <dd className="text-slate-400">
                           Blake Lively, Justin Baldoni
@@ -208,7 +208,7 @@ function HomeBody() {
 
               <Link
                 to="/BadboysReview"
-                className="homeIntro rounded-lg p-2 w-full"
+                className="homeIntro rounded-lg p-2 tablet:p-4 w-full"
               >
                 <article className="p-3 space-x-4 items-start sm:space-x-6 lg:space-x-4 xl:space-x-6 flex">
                   <img
@@ -218,10 +218,10 @@ function HomeBody() {
                     alt=""
                     width="100"
                     height="88"
-                    className="flex-none rounded-lg"
+                    className="flex-none tablet:w-32 rounded-lg"
                   />
                   <div className="min-w-0 relative flex-auto">
-                    <h2 className="font-semibold text-base text-slate-900 truncate sm:pr-20 dark:text-slate-100">
+                    <h2 className="font-semibold text-base tablet:text-2xl text-slate-900 truncate sm:pr-20 dark:text-slate-100">
                       Bad Boys: Ride or Die
                     </h2>
                     <dl className="mt-2 flex flex-wrap text-xs leading-6 font-light">
@@ -289,7 +289,7 @@ function HomeBody() {
 
               <Link
                 to="/ThebeastwithinReview"
-                className="homeIntro rounded-lg p-2 w-full"
+                className="homeIntro rounded-lg p-2 tablet:p-4 w-full"
               >
                 <article className="p-3 space-x-4 items-start sm:space-x-6 lg:space-x-4 xl:space-x-6 flex">
                   <img
@@ -299,10 +299,10 @@ function HomeBody() {
                     alt="the beast within"
                     width="100"
                     height="88"
-                    className="flex-none rounded-lg"
+                    className="flex-none tablet:w-32 rounded-lg"
                   />
                   <div className="min-w-0 relative flex-auto">
-                    <h2 className="font-semibold text-base text-slate-900 truncate sm:pr-20 dark:text-slate-100">
+                    <h2 className="font-semibold text-base tablet:text-2xl text-slate-900 truncate sm:pr-20 dark:text-slate-100">
                       The Beast Within
                     </h2>
                     <dl className="mt-2 flex flex-wrap text-xs leading-6 font-light">
@@ -370,7 +370,7 @@ function HomeBody() {
 
               <Link
                 to="/LonglegsReview"
-                className="homeIntro rounded-lg p-2 w-full"
+                className="homeIntro rounded-lg p-2 tablet:p-4 w-full"
               >
                 <article className="p-3 space-x-4 items-start sm:space-x-6 lg:space-x-4 xl:space-x-6 flex">
                   <img
@@ -380,10 +380,10 @@ function HomeBody() {
                     alt=""
                     width="100"
                     height="88"
-                    className="flex-none rounded-lg"
+                    className="flex-none tablet:w-32 rounded-lg"
                   />
                   <div className="min-w-0 relative flex-auto">
-                    <h2 className="font-semibold text-base text-slate-900 truncate sm:pr-20 dark:text-slate-100">
+                    <h2 className="font-semibold text-base tablet:text-2xl text-slate-900 truncate sm:pr-20 dark:text-slate-100">
                       Longlegs
                     </h2>
                     <dl className="mt-2 flex flex-wrap text-xs leading-6 font-light">
@@ -451,7 +451,7 @@ function HomeBody() {
 
               <Link
                 to="/InsideoutReview"
-                className="homeIntro rounded-lg p-2 w-full"
+                className="homeIntro rounded-lg p-2 tablet:p-4 w-full"
               >
                 <article className="p-3 space-x-4 items-start sm:space-x-6 lg:space-x-4 xl:space-x-6 flex">
                   <img
@@ -461,10 +461,10 @@ function HomeBody() {
                     alt=""
                     width="100"
                     height="88"
-                    className="flex-none rounded-lg"
+                    className="flex-none tablet:w-32 rounded-lg"
                   />
                   <div className="min-w-0 relative flex-auto">
-                    <h2 className="font-semibold text-base text-slate-900 truncate sm:pr-20 dark:text-slate-100">
+                    <h2 className="font-semibold text-base tablet:text-2xl text-slate-900 truncate sm:pr-20 dark:text-slate-100">
                       Inside Out 2
                     </h2>
                     <dl className="mt-2 flex flex-wrap text-xs leading-6 font-light">
