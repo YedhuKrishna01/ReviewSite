@@ -125,33 +125,38 @@ function HomeMovieList() {
   };
 
   return (
-    <div className="w-10/12 homeIntro mt-4 rounded-lg text-xl flex flex-col gap-y-4 font-semilight relative">
+    <div className="w-10/12 homeIntro mt-4 rounded-lg flex flex-col gap-y-4 tablet:gap-y-6 laptop:gap-y-8 laptop:p-4 font-semilight relative">
       <button
-        className="text-white flex justify-center items-center scrollButton rounded-full absolute top-[55%] right-[94%] z-10"
+        className="text-white tablet:text-2xl laptop:text-3xl flex justify-center items-center scrollButton tablet:scale-125 laptop:scale-150 rounded-full absolute top-[55%] right-[94%] z-10"
         onClick={scrollLeft}
       >
         {"<"}
       </button>
       <button
-        className="text-white flex justify-center items-center scrollButton rounded-full absolute top-[55%] left-[94%] z-10"
+        className="text-white tablet:text-2xl laptop:text-3xl flex justify-center items-center scrollButton tablet:scale-125 laptop:scale-150 rounded-full absolute top-[55%] left-[94%] z-10"
         onClick={scrollRight}
       >
         {">"}
       </button>
-      <div className="flex mt-6 justify-center">
+      <div className="flex mt-6 tablet:mt-14 justify-center">
         <input
-          className="rounded-md w-10/12 bg-transparent border-[1px] border-white p-2 placeholder:text-sm placeholder:pl-2 placeholder:text-zinc-300 text-sm"
+          className="rounded-md w-10/12 bg-transparent border-[1px] border-white p-2 tablet:pl-3 laptop:pl-4 placeholder:text-sm tablet:h-14 laptop:h-20 tablet:placeholder:text-lg laptop:placeholder:text-3xl placeholder:pl-2 placeholder:text-zinc-300 text-sm tablet:text-xl laptop:text-3xl"
           placeholder="Search..."
           value={searchQuery}
           onChange={(e) => setSearchQuery(e.target.value)}
         />
       </div>
-      <div className="text-center">More Movies</div>
+      <div className="text-center tablet:text-3xl laptop:text-4xl">
+        More Movies
+      </div>
 
-      <div className="w-full h-[28rem] mt-[-3vh] flex slider" ref={slideRef}>
+      <div
+        className="w-full h-[28rem] tablet:h-[56rem] laptop:h-[70rem] mt-[-3vh] tablet:mt-[-5vh] laptop:mt-[-4vh] flex slider"
+        ref={slideRef}
+      >
         {slides.map((slide, index) => (
           <div
-            className="w-full grid grid-cols-2 gap-4 slides p-6 rounded-lg"
+            className="w-full grid grid-cols-2 gap-4 tablet:gap-6 laptop:gap-10 slides p-6 tablet:p-14 rounded-lg"
             key={index}
             style={{ gridTemplateRows: "repeat(2, 1fr)" }}
           >
@@ -164,16 +169,19 @@ function HomeMovieList() {
                   backgroundImage: `url(${movie.image})`,
                   backgroundSize: "cover",
                   backgroundPosition: "center",
-                  height: "12rem",
                 }}
               >
                 <div className="absolute cardText w-full bottom-0 left-0 rounded-b-lg pb-1">
-                  <div className="text-xs font-semibold whitespace-nowrap overflow-x-hidden text-ellipsis px-1 pt-2">
+                  <div className="text-xs tablet:text-lg laptop:text-2xl font-semibold whitespace-nowrap overflow-x-hidden text-ellipsis px-1 pt-2">
                     {movie.title}
                   </div>
                   <div className="flex pt-1">
-                    <div className="text-xs px-1">{movie.year}</div>
-                    <div className="text-xs px-1">{movie.duration}</div>
+                    <div className="text-xs tablet:text-base laptop:text-xl px-1">
+                      {movie.year}
+                    </div>
+                    <div className="text-xs tablet:text-base laptop:text-xl px-1">
+                      {movie.duration}
+                    </div>
                   </div>
                 </div>
               </Link>
