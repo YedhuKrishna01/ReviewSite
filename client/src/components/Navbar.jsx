@@ -11,7 +11,7 @@ function Navbar() {
   return (
     <div>
       <div className="grid grid-cols-12 h-20 tablet:h-24 laptop:h-28 pt-6 tablet:pt-10 laptop:pt-12">
-        <div className="text-white col-start-2 py-2 font-medium text-2xl tablet:text-4xl laptop:text-5xl">
+        <div className="text-white col-start-2 py-2 font-medium text-2xl tablet:text-4xl laptop:text-5xl desktop:text-4xl">
           <Link className="ml-2" to="/">
             Reseña.
           </Link>
@@ -24,7 +24,7 @@ function Navbar() {
             viewBox="0 -960 960 960"
             width="30px"
             fill="#e8eaed"
-            className={`transform transition-transform duration-700 tablet:scale-125 laptop:scale-150 ${
+            className={`transform transition-transform duration-700 tablet:scale-125 laptop:scale-150 desktop:scale-125 ${
               isMenuOpen ? "rotate-180" : ""
             }`}
           >
@@ -39,7 +39,7 @@ function Navbar() {
           isMenuOpen ? "max-h-40" : "max-h-0"
         }`}
       >
-        <div className="text-white text-sm tablet:text-lg laptop:text-xl w-10/12 py-1 px-3">
+        <div className="text-white text-sm tablet:text-lg laptop:text-xl desktop:text-lg w-10/12 py-1 px-3">
           <ul className="space-y-2 tablet:space-y-3 tablet:mt-1">
             <li>
               <Link to="/" className="hover:underline">

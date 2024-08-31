@@ -13,8 +13,8 @@ function HomeBody() {
 
   return (
     <div>
-      <div className="h-64 tablet:h-96 laptop:h-[28rem] flex flex-col intro justify-center items-center relative text-white mt-3 tablet:mt-8">
-        <div className="text-2xl tablet:text-4xl laptop:text-5xl w-9/12 text-center font-semibold">
+      <div className="h-64 tablet:h-96 laptop:h-[28rem] desktop:h-[36rem] flex flex-col intro justify-center items-center relative text-white mt-3 tablet:mt-8">
+        <div className="text-2xl tablet:text-4xl laptop:text-5xl desktop:text-6xl w-9/12 text-center font-semibold desktop:font-medium">
           Welcome,
           <br /> Film connoisseurs!
         </div>
@@ -36,17 +36,17 @@ function HomeBody() {
             Series
           </Link>
         </div>
-        <div className="absolute mt-14 tablet:mt-52 laptop:mt-72 h-auto w-full flex flex-col gap-y-4 tablet:gap-y-8 laptop:gap-y-12 items-center top-52 left-0">
-          <div className="text-xl tablet:text-3xl laptop:text-4xl rounded-t-lg underline underline-offset-4 decoration-1 w-6/12 p-2 font-semilight text-center">
+        <div className="absolute mt-14 tablet:mt-52 laptop:mt-72 desktop:mt-[25rem] h-auto w-full flex flex-col gap-y-4 tablet:gap-y-8 laptop:gap-y-12 desktop:gap-y-6 items-center top-52 left-0">
+          <div className="text-xl tablet:text-3xl laptop:text-4xl desktop:text-3xl rounded-t-lg underline underline-offset-4 decoration-1 w-6/12 p-2 font-semilight text-center">
             Latest Reviews
           </div>
           <div className="flex w-10/12 items-center relative">
-            <div className="w-full flex flex-col gap-y-4 tablet:gap-y-10 laptop:gap-y-14">
+            <div className="w-full flex flex-col desktop:grid desktop:grid-cols-2 gap-y-4 tablet:gap-y-10 laptop:gap-y-14 desktop:gap-10">
               {/* deadpool & wolverine */}
 
               <Link
                 to="/DeadpoolReview"
-                className="homeIntro rounded-lg p-2 tablet:p-4 laptop:p-6 w-full"
+                className="homeIntro rounded-lg p-2 tablet:p-4 laptop:p-6 desktop:p-4 w-full"
               >
                 <article className="p-3 space-x-4 items-start flex">
                   <img
@@ -56,14 +56,14 @@ function HomeBody() {
                     alt="deadpool and wolverine"
                     width="100"
                     height="88"
-                    className="flex-none tablet:w-32 laptop:w-44 rounded-lg"
+                    className="flex-none tablet:w-32 laptop:w-44 desktop:w-32 rounded-lg"
                   />
                   <div className="min-w-0 laptop:pl-3 relative flex-auto">
-                    <h2 className="font-semibold text-base tablet:text-2xl laptop:text-4xl text-slate-900 truncate sm:pr-20 dark:text-slate-100">
+                    <h2 className="font-semibold text-base tablet:text-2xl laptop:text-4xl desktop:text-2xl text-slate-900 truncate sm:pr-20 dark:text-slate-100">
                       Deadpool & Wolverine
                     </h2>
-                    <dl className="mt-2 flex flex-wrap text-xs tablet:text-base laptop:text-xl tablet:w-10/12 leading-6 tablet:leading-9 laptop:leading-10 font-light">
-                      <div className="hidden tablet:flex absolute top-28 left-0 laptop:top-32 laptop:left-4 items-center space-x-1 dark:text-slate-100">
+                    <dl className="mt-2 flex flex-wrap text-xs tablet:text-base laptop:text-xl desktop:text-sm tablet:w-10/12 leading-6 tablet:leading-9 laptop:leading-10 desktop:leading-[2rem] font-light">
+                      <div className="hidden tablet:flex absolute top-28 left-0 laptop:top-32 desktop:top-40 laptop:left-4 items-center space-x-1 dark:text-slate-100">
                         <dt className="text-red-800">
                           <span className="sr-only">Star rating</span>
                           <svg width="16" height="20" fill="currentColor">
@@ -127,7 +127,7 @@ function HomeBody() {
 
               <Link
                 to="/ItendswithusReview"
-                className="homeIntro rounded-lg p-2 tablet:p-4 laptop:p-6 w-full"
+                className="homeIntro rounded-lg p-2 tablet:p-4 laptop:p-6 desktop:p-4 w-full"
               >
                 <article className="p-3 space-x-4 items-start flex">
                   <img
@@ -137,14 +137,14 @@ function HomeBody() {
                     alt="it ends with us"
                     width="100"
                     height="88"
-                    className="flex-none tablet:w-32 laptop:w-44 rounded-lg"
+                    className="flex-none tablet:w-32 laptop:w-44 desktop:w-32 rounded-lg"
                   />
                   <div className="min-w-0 laptop:pl-3 relative flex-auto">
-                    <h2 className="font-semibold text-base tablet:text-2xl laptop:text-4xl text-slate-900 truncate sm:pr-20 dark:text-slate-100">
+                    <h2 className="font-semibold text-base tablet:text-2xl laptop:text-4xl desktop:text-2xl text-slate-900 truncate sm:pr-20 dark:text-slate-100">
                       It Ends With Us
                     </h2>
-                    <dl className="mt-2 flex flex-wrap text-xs tablet:text-base laptop:text-xl tablet:w-10/12 leading-6 tablet:leading-9 laptop:leading-10 font-light">
-                      <div className="hidden tablet:flex absolute top-28 left-0 laptop:top-32 laptop:left-4 items-center space-x-1 dark:text-slate-100">
+                    <dl className="mt-2 flex flex-wrap text-xs tablet:text-base laptop:text-xl desktop:text-sm tablet:w-10/12 leading-6 tablet:leading-9 laptop:leading-10 desktop:leading-[2rem] font-light">
+                      <div className="hidden tablet:flex absolute top-28 left-0 laptop:top-32 desktop:top-40 laptop:left-4 items-center space-x-1 dark:text-slate-100">
                         <dt className="text-red-800">
                           <span className="sr-only">Star rating</span>
                           <svg width="16" height="20" fill="currentColor">
@@ -208,7 +208,7 @@ function HomeBody() {
 
               <Link
                 to="/BadboysReview"
-                className="homeIntro rounded-lg p-2 tablet:p-4 laptop:p-6 w-full"
+                className="homeIntro rounded-lg p-2 tablet:p-4 laptop:p-6 desktop:p-4 w-full"
               >
                 <article className="p-3 space-x-4 items-start flex">
                   <img
@@ -218,14 +218,14 @@ function HomeBody() {
                     alt=""
                     width="100"
                     height="88"
-                    className="flex-none tablet:w-32 laptop:w-44 rounded-lg"
+                    className="flex-none tablet:w-32 laptop:w-44 desktop:w-32 rounded-lg"
                   />
                   <div className="min-w-0 laptop:pl-3 relative flex-auto">
-                    <h2 className="font-semibold text-base tablet:text-2xl laptop:text-4xl text-slate-900 truncate sm:pr-20 dark:text-slate-100">
+                    <h2 className="font-semibold text-base tablet:text-2xl laptop:text-4xl desktop:text-2xl text-slate-900 truncate sm:pr-20 dark:text-slate-100">
                       Bad Boys: Ride or Die
                     </h2>
-                    <dl className="mt-2 flex flex-wrap text-xs tablet:text-base laptop:text-xl tablet:w-10/12 leading-6 tablet:leading-9 laptop:leading-10 font-light">
-                      <div className="hidden tablet:flex absolute top-28 left-0 laptop:top-32 laptop:left-4 items-center space-x-1 dark:text-slate-100">
+                    <dl className="mt-2 flex flex-wrap text-xs tablet:text-base laptop:text-xl desktop:text-sm tablet:w-10/12 leading-6 tablet:leading-9 laptop:leading-10 desktop:leading-[2rem] font-light">
+                      <div className="hidden tablet:flex absolute top-28 left-0 laptop:top-32 desktop:top-40 laptop:left-4 items-center space-x-1 dark:text-slate-100">
                         <dt className="text-red-800">
                           <span className="sr-only">Star rating</span>
                           <svg width="16" height="20" fill="currentColor">
@@ -289,7 +289,7 @@ function HomeBody() {
 
               <Link
                 to="/ThebeastwithinReview"
-                className="homeIntro rounded-lg p-2 tablet:p-4 laptop:p-6 w-full"
+                className="homeIntro rounded-lg p-2 tablet:p-4 laptop:p-6 desktop:p-4 w-full"
               >
                 <article className="p-3 space-x-4 items-start flex">
                   <img
@@ -299,14 +299,14 @@ function HomeBody() {
                     alt="the beast within"
                     width="100"
                     height="88"
-                    className="flex-none tablet:w-32 laptop:w-44 rounded-lg"
+                    className="flex-none tablet:w-32 laptop:w-44 desktop:w-32 rounded-lg"
                   />
                   <div className="min-w-0 laptop:pl-3 relative flex-auto">
-                    <h2 className="font-semibold text-base tablet:text-2xl laptop:text-4xl text-slate-900 truncate sm:pr-20 dark:text-slate-100">
+                    <h2 className="font-semibold text-base tablet:text-2xl laptop:text-4xl desktop:text-2xl text-slate-900 truncate sm:pr-20 dark:text-slate-100">
                       The Beast Within
                     </h2>
-                    <dl className="mt-2 flex flex-wrap text-xs tablet:text-base laptop:text-xl tablet:w-10/12 leading-6 tablet:leading-9 laptop:leading-10 font-light">
-                      <div className="hidden tablet:flex absolute top-28 left-0 laptop:top-32 laptop:left-4 items-center space-x-1 dark:text-slate-100">
+                    <dl className="mt-2 flex flex-wrap text-xs tablet:text-base laptop:text-xl desktop:text-sm tablet:w-10/12 leading-6 tablet:leading-9 laptop:leading-10 desktop:leading-[2rem] font-light">
+                      <div className="hidden tablet:flex absolute top-28 left-0 laptop:top-32 desktop:top-40 laptop:left-4 items-center space-x-1 dark:text-slate-100">
                         <dt className="text-red-800">
                           <span className="sr-only">Star rating</span>
                           <svg width="16" height="20" fill="currentColor">
@@ -370,7 +370,7 @@ function HomeBody() {
 
               <Link
                 to="/LonglegsReview"
-                className="homeIntro rounded-lg p-2 tablet:p-4 laptop:p-6 w-full"
+                className="homeIntro rounded-lg p-2 tablet:p-4 laptop:p-6 desktop:p-4 w-full"
               >
                 <article className="p-3 space-x-4 items-start flex">
                   <img
@@ -380,14 +380,14 @@ function HomeBody() {
                     alt=""
                     width="100"
                     height="88"
-                    className="flex-none tablet:w-32 laptop:w-44 rounded-lg"
+                    className="flex-none tablet:w-32 laptop:w-44 desktop:w-32 rounded-lg"
                   />
                   <div className="min-w-0 laptop:pl-3 relative flex-auto">
-                    <h2 className="font-semibold text-base tablet:text-2xl laptop:text-4xl text-slate-900 truncate sm:pr-20 dark:text-slate-100">
+                    <h2 className="font-semibold text-base tablet:text-2xl laptop:text-4xl desktop:text-2xl text-slate-900 truncate sm:pr-20 dark:text-slate-100">
                       Longlegs
                     </h2>
-                    <dl className="mt-2 flex flex-wrap text-xs tablet:text-base laptop:text-xl tablet:w-10/12 leading-6 tablet:leading-9 laptop:leading-10 font-light">
-                      <div className="hidden tablet:flex absolute top-28 left-0 laptop:top-32 laptop:left-4 items-center space-x-1 dark:text-slate-100">
+                    <dl className="mt-2 flex flex-wrap text-xs tablet:text-base laptop:text-xl desktop:text-sm tablet:w-10/12 leading-6 tablet:leading-9 laptop:leading-10 desktop:leading-[2rem] font-light">
+                      <div className="hidden tablet:flex absolute top-28 left-0 laptop:top-32 desktop:top-40 laptop:left-4 items-center space-x-1 dark:text-slate-100">
                         <dt className="text-red-800">
                           <span className="sr-only">Star rating</span>
                           <svg width="16" height="20" fill="currentColor">
@@ -451,7 +451,7 @@ function HomeBody() {
 
               <Link
                 to="/InsideoutReview"
-                className="homeIntro rounded-lg p-2 tablet:p-4 laptop:p-6 w-full"
+                className="homeIntro rounded-lg p-2 tablet:p-4 laptop:p-6 desktop:p-4 w-full"
               >
                 <article className="p-3 space-x-4 items-start flex">
                   <img
@@ -461,14 +461,14 @@ function HomeBody() {
                     alt=""
                     width="100"
                     height="88"
-                    className="flex-none tablet:w-32 laptop:w-44 rounded-lg"
+                    className="flex-none tablet:w-32 laptop:w-44 desktop:w-32 rounded-lg"
                   />
                   <div className="min-w-0 laptop:pl-3 relative flex-auto">
-                    <h2 className="font-semibold text-base tablet:text-2xl laptop:text-4xl text-slate-900 truncate sm:pr-20 dark:text-slate-100">
+                    <h2 className="font-semibold text-base tablet:text-2xl laptop:text-4xl desktop:text-2xl text-slate-900 truncate sm:pr-20 dark:text-slate-100">
                       Inside Out 2
                     </h2>
-                    <dl className="mt-2 flex flex-wrap text-xs tablet:text-base laptop:text-xl tablet:w-10/12 leading-6 tablet:leading-9 laptop:leading-10 font-light">
-                      <div className="hidden tablet:flex absolute top-28 left-0 laptop:top-32 laptop:left-4 items-center space-x-1 dark:text-slate-100">
+                    <dl className="mt-2 flex flex-wrap text-xs tablet:text-base laptop:text-xl desktop:text-sm tablet:w-10/12 leading-6 tablet:leading-9 laptop:leading-10 desktop:leading-[2rem] font-light">
+                      <div className="hidden tablet:flex absolute top-28 left-0 laptop:top-32 desktop:top-40 laptop:left-4 items-center space-x-1 dark:text-slate-100">
                         <dt className="text-red-800">
                           <span className="sr-only">Star rating</span>
                           <svg width="16" height="20" fill="currentColor">
