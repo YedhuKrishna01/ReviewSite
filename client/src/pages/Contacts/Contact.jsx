@@ -43,13 +43,15 @@ function Contact() {
   return (
     <div>
       <Navbar />
-      <div className="grid h-[87vh] grid-cols-12">
-        <div className="col-start-2 col-span-10 flex flex-col justify-center items-center text-center text-white pt-12">
-          <div className="text-2xl">Which movie should I review next?</div>
-          <section className="flex homeIntro mt-6 rounded-md w-full h-auto p-7">
+      <div className="grid h-[87vh] tablet:mt-5 grid-cols-12">
+        <div className="col-start-2 col-span-10 tablet:col-start-3 desktop:col-start-4 tablet:col-span-8 desktop:col-span-6 flex flex-col justify-center items-center text-center text-white pt-12 tv:pt-20">
+          <div className="text-2xl tablet:text-4xl laptop:text-5xl tv:text-6xl">
+            Which movie should I review next?
+          </div>
+          <section className="flex desktop:w-10/12 tv:w-8/12 homeIntro mt-6 tablet:text-xl laptop:text-2xl desktop:text-xl tablet:mt-8 laptop:mt-12 mb-12 rounded-md w-full h-auto p-7 tablet:p-14">
             <form
               onSubmit={onSubmit}
-              className="flex flex-col text-left space-y-4 w-full"
+              className="flex flex-col text-left space-y-4 tablet:space-y-6 w-full"
             >
               <div>
                 <label htmlFor="name">Movie Name :</label>
@@ -58,7 +60,7 @@ function Contact() {
                   type="text"
                   id="name"
                   name="name"
-                  className="rounded-md w-full bg-transparent border-[1px] border-white p-2 placeholder:text-sm placeholder:pl-2 placeholder:text-zinc-300 text-sm mt-2"
+                  className="rounded-md w-full bg-transparent border-[1px] border-white p-2 placeholder:text-sm tablet:placeholder:text-lg laptop:placeholder:text-2xl desktop:placeholder:text-xl placeholder:pl-2 placeholder:text-zinc-400 text-sm tablet:text-lg laptop:text-2xl desktop:text-xl mt-2 tablet:mt-3"
                   placeholder="Enter the movie name"
                   required
                 />
@@ -70,7 +72,7 @@ function Contact() {
                   type="email"
                   id="email"
                   name="email"
-                  className="rounded-md w-full bg-transparent border-[1px] border-white p-2 placeholder:text-sm placeholder:pl-2 placeholder:text-zinc-300 text-sm mt-2"
+                  className="rounded-md w-full bg-transparent border-[1px] border-white p-2 placeholder:text-sm tablet:placeholder:text-lg laptop:placeholder:text-2xl desktop:placeholder:text-xl placeholder:pl-2 placeholder:text-zinc-400 text-sm tablet:text-lg laptop:text-2xl desktop:text-xl mt-2 tablet:mt-3"
                   placeholder="Enter your email"
                   required
                 />
@@ -81,13 +83,15 @@ function Contact() {
                 <textarea
                   id="message"
                   name="message"
-                  className="rounded-md h-[30vh] resize-none w-full bg-transparent border-[1px] border-white p-2 placeholder:text-sm placeholder:pl-2 placeholder:text-zinc-300 text-sm mt-2"
+                  className="rounded-md h-[30vh] resize-none w-full bg-transparent border-[1px] border-white p-2 placeholder:text-sm tablet:placeholder:text-lg laptop:placeholder:text-2xl desktop:placeholder:text-xl placeholder:pl-2 placeholder:text-zinc-400 text-sm tablet:text-lg laptop:text-2xl desktop:text-xl mt-2 tablet:mt-3"
                   placeholder="Enter your message"
                 ></textarea>
                 <br />
+              </div>
+              <div className="flex justify-center">
                 <button
                   type="submit"
-                  className="mt-5 cursor-pointer w-full bg-red-900 hover:bg-red-800 text-white rounded-md  py-2 px-4"
+                  className="mt-5 cursor-pointer w-full tablet:w-8/12 desktop:w-6/12 bg-red-800 hover:bg-red-900 text-white rounded-md py-2 px-4 laptop:py-4 desktop:py-2 desktop:text-lg"
                 >
                   Send
                 </button>

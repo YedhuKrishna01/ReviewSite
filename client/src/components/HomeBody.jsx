@@ -24,14 +24,14 @@ function HomeBody() {
         <div className="flex mt-3 tablet:mt-5 gap-x-10 tablet:gap-x-14 laptop:gap-x-16">
           <button
             onClick={() => scrollToSection(movieSectionRef)}
-            className="text-center rounded-md tablet:text-xl laptop:text-2xl font-medium w-36 px-3 bg-red-900 hover:bg-red-800 py-2 tablet:px-5 laptop:px-8"
+            className="text-center rounded-md tablet:text-xl laptop:text-2xl font-medium w-36 px-3 bg-red-800 hover:bg-red-900 py-2 tablet:px-5 laptop:px-8"
           >
             Movies
           </button>
 
           <Link
             to="/TVshows"
-            className="text-center rounded-md tablet:text-xl laptop:text-2xl font-medium w-36 px-3 bg-red-900 hover:bg-red-800 py-2 tablet:px-5 laptop:px-8"
+            className="text-center rounded-md tablet:text-xl laptop:text-2xl font-medium w-36 px-3 bg-red-800 hover:bg-red-900 py-2 tablet:px-5 laptop:px-8"
           >
             Series
           </Link>

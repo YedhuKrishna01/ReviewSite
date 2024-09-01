@@ -140,7 +140,7 @@ function HomeMovieList() {
       </button>
       <div className="flex mt-6 tablet:mt-14 justify-center">
         <input
-          className="rounded-md w-10/12 desktop:w-6/12 bg-transparent border-[1px] border-white p-2 tablet:pl-3 laptop:pl-4 placeholder:text-sm tablet:h-14 laptop:h-20 desktop:h-12 desktop:placeholder:pl-0 tablet:placeholder:text-lg laptop:placeholder:text-3xl desktop:placeholder:text-lg placeholder:pl-2 placeholder:text-zinc-300 text-sm tablet:text-xl laptop:text-3xl desktop:text-lg"
+          className="rounded-md w-10/12 desktop:w-6/12 bg-transparent border-[1px] border-white p-2 tablet:pl-3 laptop:pl-4 placeholder:text-sm tablet:h-14 laptop:h-20 desktop:h-12 desktop:placeholder:pl-0 tablet:placeholder:text-lg laptop:placeholder:text-3xl desktop:placeholder:text-lg placeholder:pl-2 placeholder:text-zinc-400 text-sm tablet:text-xl laptop:text-3xl desktop:text-lg"
           placeholder="Search..."
           value={searchQuery}
           onChange={(e) => setSearchQuery(e.target.value)}

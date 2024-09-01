@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import Navbar from "../components/Navbar";
+import Recommend from "../components/Recommend";
 
 function DeadpoolReview() {
   const [isExpanded, setIsExpanded] = useState(false);
@@ -13,29 +14,31 @@ function DeadpoolReview() {
       <Navbar />
       <div className="text-white mt-5 flex justify-center">
         <div className="w-10/12 homeIntro flex rounded-lg p-6">
-          <img src="/Deadpool.jpg" className="h-48 rounded-lg" />
+          <img src="/Deadpool.jpg" className="h-48 tablet:h-56 rounded-lg" />
           <div className="flex flex-col pl-4">
-            <div className="text-base font-semibold">Deadpool & Wolverine</div>
-            <div className="text-xs mt-3 text-zinc-300 font-medium">
+            <div className="text-base tablet:text-2xl font-semibold">
+              Deadpool & Wolverine
+            </div>
+            <div className="text-xs tablet:text-base mt-3 text-zinc-300 font-medium">
               Acting : 8
             </div>
-            <div className="text-xs mt-3 text-zinc-300 font-medium">
+            <div className="text-xs tablet:text-base mt-3 text-zinc-300 font-medium">
               Filmmaking/VFX : 8
             </div>
-            <div className="text-xs mt-3 text-zinc-300 font-medium">
+            <div className="text-xs tablet:text-base mt-3 text-zinc-300 font-medium">
               Plot/Screenplay : 7
             </div>
-            <div className="text-xs mt-3 text-zinc-300 font-medium">
+            <div className="text-xs tablet:text-base mt-3 text-zinc-300 font-medium">
               Rewatchability : 9
             </div>
-            <div className="text-xs mt-3 text-zinc-300 font-medium">
+            <div className="text-xs tablet:text-base mt-3 text-zinc-300 font-medium">
               Overall : 8
             </div>
           </div>
         </div>
       </div>
       <div className="flex justify-center mt-6 text-white">
-        <div className="w-10/12 mt-5 text-sm text-justify">
+        <div className="w-10/12 mt-5 text-sm tablet:text-lg text-justify">
           The highly anticipated Deadpool & Wolverine marks the 34th entry in
           the Marvel Cinematic Universe (MCU). Directed by Shawn Levy, the film
           stars Ryan Reynolds as Deadpool and sees Hugh Jackman return as
@@ -119,11 +122,12 @@ function DeadpoolReview() {
       <div className="flex justify-center mt-3">
         <button
           onClick={toggleExpand}
-          className="text-white border-[1px] text-xs homeIntro rounded-lg px-4 py-2 mb-5 opacity-80 hover:opacity-100"
+          className="text-white border-[1px] text-xs tablet:text-base homeIntro rounded-lg px-4 py-2 mb-5 opacity-80 hover:opacity-100"
         >
           {isExpanded ? "Read Less" : "Read More"}
         </button>
       </div>
+      <Recommend />
     </div>
   );
 }
