@@ -151,7 +151,7 @@ function HomeMovieList() {
       </div>
 
       <div
-        className="w-full h-[28rem] tablet:h-[56rem] laptop:h-[70rem] desktop:h-[1500px] mt-[-3vh] tablet:mt-[-5vh] laptop:mt-[-4vh] desktop:mt-[-7vh] flex slider"
+        className="w-full h-[28rem] tablet:h-[56rem] laptop:h-[70rem] desktop:h-[1500px] tv:h-[2000px] mt-[-3vh] tablet:mt-[-5vh] laptop:mt-[-4vh] desktop:mt-[-7vh] flex slider"
         ref={slideRef}
       >
         {slides.map((slide, index) => (

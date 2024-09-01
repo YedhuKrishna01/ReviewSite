@@ -16,14 +16,14 @@ function TVshowBody() {
       <div className="rounded-3xl flex flex-col justify-center items-center text-white mt-3">
         <div className="h-auto w-full flex flex-col gap-y-4 md:gap-y-6 items-center top-52 left-0">
           <div className=" mt-3 flex w-10/12 items-center relative">
-            <div className="w-full flex flex-col mb-5 gap-y-4">
+            <div className="w-full mb-8 tablet:mb-14 laptop:mb-20 desktop:mb-14 tv:mb-20 flex flex-col desktop:grid desktop:grid-cols-2 gap-y-4 tablet:gap-y-10 laptop:gap-y-14 desktop:gap-10">
               {/* House of the dragons S2 */}
 
               <Link
                 to="/HOTDReview"
-                className="homeIntro rounded-lg p-2 w-full"
+                className="homeIntro rounded-lg p-2 tablet:p-4 laptop:p-6 desktop:p-4 w-full"
               >
-                <article className="p-3 space-x-4 items-start sm:space-x-6 lg:space-x-4 xl:space-x-6 flex">
+                <article className="p-3 space-x-4 items-start flex">
                   <img
                     src="/hotd.jpg"
                     loading="lazy"
@@ -31,14 +31,14 @@ function TVshowBody() {
                     alt=""
                     width="100"
                     height="88"
-                    className="flex-none rounded-lg"
+                    className="flex-none tablet:w-32 laptop:w-44 desktop:w-32 rounded-lg"
                   />
-                  <div className="min-w-0 relative flex-auto">
-                    <h2 className="font-semibold text-base text-slate-900 truncate sm:pr-20 dark:text-slate-100">
+                  <div className="min-w-0 laptop:pl-3 relative flex-auto">
+                    <h2 className="font-semibold text-base tablet:text-2xl laptop:text-4xl desktop:text-2xl text-slate-900 truncate sm:pr-20 dark:text-slate-100">
                       House of the Dragon (S2)
                     </h2>
-                    <dl className="mt-2 flex flex-wrap text-xs leading-6 font-light">
-                      <div className="hidden absolute top-0 right-0 sm:flex items-center space-x-1 dark:text-slate-100">
+                    <dl className="mt-2 flex flex-wrap text-xs tablet:text-base laptop:text-xl desktop:text-sm tablet:w-10/12 leading-6 tablet:leading-9 laptop:leading-10 desktop:leading-[2rem] font-light">
+                      <div className="hidden tablet:flex absolute top-28 left-0 laptop:top-32 desktop:top-40 laptop:left-4 items-center space-x-1 dark:text-slate-100">
                         <dt className="text-red-800">
                           <span className="sr-only">Star rating</span>
                           <svg width="16" height="20" fill="currentColor">
@@ -87,7 +87,7 @@ function TVshowBody() {
                           S2 || EP8
                         </dd>
                       </div>
-                      <div className="flex-none w-full mt-2 font-normal text-nowrap overflow-hidden">
+                      <div className="flex-none w-full mt-2 tablet:mt-0 font-normal text-nowrap overflow-hidden">
                         <dt className="sr-only">Cast</dt>
                         <dd className="text-slate-400">
                           Matt Smith, Emma D'Arcy
@@ -102,9 +102,9 @@ function TVshowBody() {
 
               <Link
                 to="/BlackOutReview"
-                className="homeIntro rounded-lg p-2 w-full"
+                className="homeIntro rounded-lg p-2 tablet:p-4 laptop:p-6 desktop:p-4 w-full"
               >
-                <article className="p-3 space-x-4 items-start sm:space-x-6 lg:space-x-4 xl:space-x-6 flex">
+                <article className="p-3 space-x-4 items-start flex">
                   <img
                     src="/blackout.jpg"
                     loading="lazy"
@@ -112,14 +112,14 @@ function TVshowBody() {
                     alt=""
                     width="100"
                     height="88"
-                    className="flex-none rounded-lg"
+                    className="flex-none tablet:w-32 laptop:w-44 desktop:w-32 rounded-lg"
                   />
-                  <div className="min-w-0 relative flex-auto">
-                    <h2 className="font-semibold text-base text-slate-900 truncate sm:pr-20 dark:text-slate-100">
+                  <div className="min-w-0 laptop:pl-3 relative flex-auto">
+                    <h2 className="font-semibold text-base tablet:text-2xl laptop:text-4xl desktop:text-2xl text-slate-900 truncate sm:pr-20 dark:text-slate-100">
                       Black Out
                     </h2>
-                    <dl className="mt-2 flex flex-wrap text-xs leading-6 font-light">
-                      <div className="hidden absolute top-0 right-0 sm:flex items-center space-x-1 dark:text-slate-100">
+                    <dl className="mt-2 flex flex-wrap text-xs tablet:text-base laptop:text-xl desktop:text-sm tablet:w-10/12 leading-6 tablet:leading-9 laptop:leading-10 desktop:leading-[2rem] font-light">
+                      <div className="hidden tablet:flex absolute top-28 left-0 laptop:top-32 desktop:top-40 laptop:left-4 items-center space-x-1 dark:text-slate-100">
                         <dt className="text-red-800">
                           <span className="sr-only">Star rating</span>
                           <svg width="16" height="20" fill="currentColor">
@@ -168,7 +168,7 @@ function TVshowBody() {
                           S1 || EP4
                         </dd>
                       </div>
-                      <div className="flex-none w-full mt-2 font-normal text-nowrap overflow-hidden">
+                      <div className="flex-none w-full mt-2 tablet:mt-0 font-normal text-nowrap overflow-hidden">
                         <dt className="sr-only">Cast</dt>
                         <dd className="text-slate-400">Byun Yo Han, Go Joon</dd>
                       </div>
@@ -181,9 +181,9 @@ function TVshowBody() {
 
               <Link
                 to="/MayorOfKingstownReview"
-                className="homeIntro rounded-lg p-2 w-full"
+                className="homeIntro rounded-lg p-2 tablet:p-4 laptop:p-6 desktop:p-4 w-full"
               >
-                <article className="p-3 space-x-4 items-start sm:space-x-6 lg:space-x-4 xl:space-x-6 flex">
+                <article className="p-3 space-x-4 items-start flex">
                   <img
                     src="/mayorofkingstown.jpg"
                     loading="lazy"
@@ -191,14 +191,14 @@ function TVshowBody() {
                     alt=""
                     width="100"
                     height="88"
-                    className="flex-none rounded-lg"
+                    className="flex-none tablet:w-32 laptop:w-44 desktop:w-32 rounded-lg"
                   />
-                  <div className="min-w-0 relative flex-auto">
-                    <h2 className="font-semibold text-base text-slate-900 truncate sm:pr-20 dark:text-slate-100">
+                  <div className="min-w-0 laptop:pl-3 relative flex-auto">
+                    <h2 className="font-semibold text-base tablet:text-2xl laptop:text-4xl desktop:text-2xl text-slate-900 truncate sm:pr-20 dark:text-slate-100">
                       Mayor of Kingstown (S3)
                     </h2>
-                    <dl className="mt-2 flex flex-wrap text-xs leading-6 font-light">
-                      <div className="hidden absolute top-0 right-0 sm:flex items-center space-x-1 dark:text-slate-100">
+                    <dl className="mt-2 flex flex-wrap text-xstablet:text-base laptop:text-xl desktop:text-sm tablet:w-10/12 leading-6 tablet:leading-9 laptop:leading-10 desktop:leading-[2rem] font-light">
+                      <div className="hidden tablet:flex absolute top-28 left-0 laptop:top-32 desktop:top-40 laptop:left-4 items-center space-x-1 dark:text-slate-100">
                         <dt className="text-red-800">
                           <span className="sr-only">Star rating</span>
                           <svg width="16" height="20" fill="currentColor">
@@ -247,7 +247,7 @@ function TVshowBody() {
                           S3 || EP10
                         </dd>
                       </div>
-                      <div className="flex-none w-full mt-2 font-normal text-nowrap overflow-hidden">
+                      <div className="flex-none w-full mt-2 tablet:mt-0 font-normal text-nowrap overflow-hidden">
                         <dt className="sr-only">Cast</dt>
                         <dd className="text-slate-400">
                           Jeremy Renner, Kyle Chandler
@@ -262,9 +262,9 @@ function TVshowBody() {
 
               <Link
                 to="/PresumedInnocentReview"
-                className="homeIntro rounded-lg p-2 w-full"
+                className="homeIntro rounded-lg p-2 tablet:p-4 laptop:p-6 desktop:p-4 w-full"
               >
-                <article className="p-3 space-x-4 items-start sm:space-x-6 lg:space-x-4 xl:space-x-6 flex">
+                <article className="p-3 space-x-4 items-start flex">
                   <img
                     src="/presumedinnocent.jpg"
                     loading="lazy"
@@ -272,14 +272,14 @@ function TVshowBody() {
                     alt="the beast within"
                     width="100"
                     height="88"
-                    className="flex-none rounded-lg"
+                    className="flex-none tablet:w-32 laptop:w-44 desktop:w-32 rounded-lg"
                   />
-                  <div className="min-w-0 relative flex-auto">
-                    <h2 className="font-semibold text-base text-slate-900 truncate sm:pr-20 dark:text-slate-100">
+                  <div className="min-w-0 laptop:pl-3 relative flex-auto">
+                    <h2 className="font-semibold text-base tablet:text-2xl laptop:text-4xl desktop:text-2xl text-slate-900 truncate sm:pr-20 dark:text-slate-100">
                       Presumed Innocent
                     </h2>
-                    <dl className="mt-2 flex flex-wrap text-xs leading-6 font-light">
-                      <div className="hidden absolute top-0 right-0 sm:flex items-center space-x-1 dark:text-slate-100">
+                    <dl className="mt-2 flex flex-wrap text-xs tablet:text-base laptop:text-xl desktop:text-sm tablet:w-10/12 leading-6 tablet:leading-9 laptop:leading-10 desktop:leading-[2rem] font-light">
+                      <div className="hidden tablet:flex absolute top-28 left-0 laptop:top-32 desktop:top-40 laptop:left-4 items-center space-x-1 dark:text-slate-100">
                         <dt className="text-red-800">
                           <span className="sr-only">Star rating</span>
                           <svg width="16" height="20" fill="currentColor">
@@ -328,7 +328,7 @@ function TVshowBody() {
                           S1 || EP8
                         </dd>
                       </div>
-                      <div className="flex-none w-full mt-2 font-normal text-nowrap overflow-hidden">
+                      <div className="flex-none w-full mt-2 tablet:mt-0 font-normal text-nowrap overflow-hidden">
                         <dt className="sr-only">Cast</dt>
                         <dd className="text-slate-400">
                           Jake Gyllenhaal, Ruth Negga
@@ -343,9 +343,9 @@ function TVshowBody() {
 
               <Link
                 to="/SweetHomeReview"
-                className="homeIntro rounded-lg p-2 w-full"
+                className="homeIntro rounded-lg p-2 tablet:p-4 laptop:p-6 desktop:p-4 w-full"
               >
-                <article className="p-3 space-x-4 items-start sm:space-x-6 lg:space-x-4 xl:space-x-6 flex">
+                <article className="p-3 space-x-4 items-start flex">
                   <img
                     src="/sweethome.jpg"
                     loading="lazy"
@@ -353,14 +353,14 @@ function TVshowBody() {
                     alt=""
                     width="100"
                     height="88"
-                    className="flex-none rounded-lg"
+                    className="flex-none tablet:w-32 laptop:w-44 desktop:w-32 rounded-lg"
                   />
-                  <div className="min-w-0 relative flex-auto">
-                    <h2 className="font-semibold text-base text-slate-900 truncate sm:pr-20 dark:text-slate-100">
+                  <div className="min-w-0 laptop:pl-3 relative flex-auto">
+                    <h2 className="font-semibold text-base tablet:text-2xl laptop:text-4xl desktop:text-2xl text-slate-900 truncate sm:pr-20 dark:text-slate-100">
                       Sweet Home (S3)
                     </h2>
-                    <dl className="mt-2 flex flex-wrap text-xs leading-6 font-light">
-                      <div className="hidden absolute top-0 right-0 sm:flex items-center space-x-1 dark:text-slate-100">
+                    <dl className="mt-2 flex flex-wrap text-xs tablet:text-base laptop:text-xl desktop:text-sm tablet:w-10/12 leading-6 tablet:leading-9 laptop:leading-10 desktop:leading-[2rem] font-light">
+                      <div className="hidden tablet:flex absolute top-28 left-0 laptop:top-32 desktop:top-40 laptop:left-4 items-center space-x-1 dark:text-slate-100">
                         <dt className="text-red-800">
                           <span className="sr-only">Star rating</span>
                           <svg width="16" height="20" fill="currentColor">
@@ -409,7 +409,7 @@ function TVshowBody() {
                           S3 || EP8
                         </dd>
                       </div>
-                      <div className="flex-none w-full mt-2 font-normal text-nowrap overflow-hidden">
+                      <div className="flex-none w-full mt-2 tablet:mt-0 font-normal text-nowrap overflow-hidden">
                         <dt className="sr-only">Cast</dt>
                         <dd className="text-slate-400">
                           Song Kang, Lee Si-young
@@ -424,9 +424,9 @@ function TVshowBody() {
 
               <Link
                 to="/Xmen1997Review"
-                className="homeIntro rounded-lg p-2 w-full"
+                className="homeIntro rounded-lg p-2 tablet:p-4 laptop:p-6 desktop:p-4 w-full"
               >
-                <article className="p-3 space-x-4 items-start sm:space-x-6 lg:space-x-4 xl:space-x-6 flex">
+                <article className="p-3 space-x-4 items-start flex">
                   <img
                     src="/xmen.jpg"
                     loading="lazy"
@@ -434,14 +434,14 @@ function TVshowBody() {
                     alt=""
                     width="100"
                     height="88"
-                    className="flex-none rounded-lg"
+                    className="flex-none tablet:w-32 laptop:w-44 desktop:w-32 rounded-lg"
                   />
-                  <div className="min-w-0 relative flex-auto">
-                    <h2 className="font-semibold text-base text-slate-900 truncate sm:pr-20 dark:text-slate-100">
+                  <div className="min-w-0 laptop:pl-3 relative flex-auto">
+                    <h2 className="font-semibold text-base tablet:text-2xl laptop:text-4xl desktop:text-2xl text-slate-900 truncate sm:pr-20 dark:text-slate-100">
                       X-men '97
                     </h2>
-                    <dl className="mt-2 flex flex-wrap text-xs leading-6 font-light">
-                      <div className="hidden absolute top-0 right-0 sm:flex items-center space-x-1 dark:text-slate-100">
+                    <dl className="mt-2 flex flex-wrap text-xs tablet:text-base laptop:text-xl desktop:text-sm tablet:w-10/12 leading-6 tablet:leading-9 laptop:leading-10 desktop:leading-[2rem] font-light">
+                      <div className="hidden tablet:flex absolute top-28 left-0 laptop:top-32 desktop:top-40 laptop:left-4 items-center space-x-1 dark:text-slate-100">
                         <dt className="text-red-800">
                           <span className="sr-only">Star rating</span>
                           <svg width="16" height="20" fill="currentColor">
@@ -490,7 +490,7 @@ function TVshowBody() {
                           S1 || EP10
                         </dd>
                       </div>
-                      <div className="flex-none w-full mt-2 font-normal text-nowrap overflow-hidden">
+                      <div className="flex-none w-full mt-2 tablet:mt-0 font-normal text-nowrap overflow-hidden">
                         <dt className="sr-only">Cast</dt>
                         <dd ref={movieSectionRef} className="text-slate-400">
                           Ray Chase, Cal Dodd
