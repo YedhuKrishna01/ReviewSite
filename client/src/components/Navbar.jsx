@@ -13,7 +13,7 @@ function Navbar() {
       <div className="grid grid-cols-12 h-20 tablet:h-24 laptop:h-28 pt-6 tablet:pt-10 laptop:pt-12">
         <div className="text-white col-start-2 py-2 font-medium text-2xl tablet:text-4xl laptop:text-5xl desktop:text-4xl">
           <Link className="ml-2" to="/">
-            Reseña.
+            Reseña
           </Link>
         </div>
         <div className="col-start-10 col-span-2 pt-2 tablet:pt-3 flex justify-end">
@@ -42,17 +42,17 @@ function Navbar() {
         <div className="text-white text-sm tablet:text-lg laptop:text-xl desktop:text-lg w-10/12 py-1 px-3">
           <ul className="space-y-2 tablet:space-y-3 tablet:mt-1">
             <li>
-              <Link to="/" className="hover:underline">
+              <Link to="/" className="hover:underline p-2">
                 Home
               </Link>
             </li>
             <li>
-              <Link to="/TVshows" className="hover:underline">
+              <Link to="/TVshows" className="hover:underline p-2">
                 TV Shows
               </Link>
             </li>
             <li>
-              <Link to="/Contact" className="hover:underline">
+              <Link to="/Contact" className="hover:underline p-2">
                 Contact
               </Link>
             </li>
