@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import Navbar from "../components/Navbar";
+import Recommend from "../components/Recommend";
 
 function ItendswithusReview() {
   const [isExpanded, setIsExpanded] = useState(false);
@@ -11,31 +12,36 @@ function ItendswithusReview() {
   return (
     <div>
       <Navbar />
-      <div className="text-white mt-5 flex justify-center">
-        <div className="w-10/12 homeIntro flex rounded-lg p-6">
-          <img src="/itendswithus.jpg" className="h-48 rounded-lg" />
+      <div className="text-white mt-5 laptop:mt-12 flex justify-center">
+        <div className="w-10/12 homeIntro flex rounded-lg p-6 laptop:p-10 desktop:p-6 tv:p-8">
+          <img
+            src="/itendswithus.jpg"
+            className="h-48 tablet:h-56 laptop:h-64 desktop:h-52 tv:h-60 rounded-lg"
+          />
           <div className="flex flex-col pl-4">
-            <div className="text-base font-semibold">It Ends With Us</div>
-            <div className="text-xs mt-3 text-zinc-300 font-medium">
+            <div className="text-base tablet:text-2xl laptop:text-3xl desktop:text-2xl tv:text-3xl font-semibold">
+              It Ends With Us
+            </div>
+            <div className="text-xs tablet:text-base laptop:text-lg desktop:text-sm tv:text-base mt-3 text-zinc-300 font-medium">
               Acting : 7
             </div>
-            <div className="text-xs mt-3 text-zinc-300 font-medium">
+            <div className="text-xs tablet:text-base laptop:text-lg desktop:text-sm tv:text-base mt-3 text-zinc-300 font-medium">
               Filmmaking/VFX : 7
             </div>
-            <div className="text-xs mt-3 text-zinc-300 font-medium">
+            <div className="text-xs tablet:text-base laptop:text-lg desktop:text-sm tv:text-base mt-3 text-zinc-300 font-medium">
               Plot/Screenplay : 8
             </div>
-            <div className="text-xs mt-3 text-zinc-300 font-medium">
+            <div className="text-xs tablet:text-base laptop:text-lg desktop:text-sm tv:text-base mt-3 text-zinc-300 font-medium">
               Rewatchability : 6
             </div>
-            <div className="text-xs mt-3 text-zinc-300 font-medium">
+            <div className="text-xs tablet:text-base laptop:text-lg desktop:text-sm tv:text-base mt-3 text-zinc-300 font-medium">
               Overall : 7
             </div>
           </div>
         </div>
       </div>
-      <div className="flex justify-center mt-6 text-white">
-        <div className="w-10/12 mt-5 text-sm text-justify">
+      <div className="flex justify-center mt-6 laptop:mt-10 text-white">
+        <div className="w-10/12 desktop:w-9/12 mt-5 text-sm tablet:text-lg laptop:text-2xl desktop:text-base tv:text-lg text-justify">
           It Ends with Us, directed by Justin Baldoni and adapted from Colleen
           Hoover’s best-selling novel, had the potential to deliver a poignant
           exploration of love, trauma, and resilience. However, despite its
@@ -49,26 +55,24 @@ function ItendswithusReview() {
           the film. Christy Hall’s screenplay attempts to compress a deeply
           emotional and layered narrative into a two-hour runtime, but in doing
           so, it strips away much of the depth and nuance that made the book so
-          compelling.
+          compelling.The pacing of the film feels rushed, particularly in the
+          development of Lily and Ryle’s relationship. What starts with initial
+          charm and chemistry quickly escalates, leaving little space for the
+          audience to fully grasp the complexities of their bond. Ryle’s
+          character remains largely underexplored beyond his surface-level
+          appeal, and when his darker side emerges, it feels more like a plot
+          contrivance than a naturally unfolding character trait, robbing the
+          story of its emotional depth.
           <br />
           <br />
           {/* Normally invisible but can be expanded if needed */}
           {isExpanded && (
             <>
-              The pacing of the film feels rushed, particularly in the
-              development of Lily and Ryle’s relationship. What starts with
-              initial charm and chemistry quickly escalates, leaving little
-              space for the audience to fully grasp the complexities of their
-              bond. Ryle’s character remains largely underexplored beyond his
-              surface-level appeal, and when his darker side emerges, it feels
-              more like a plot contrivance than a naturally unfolding character
-              trait, robbing the story of its emotional depth.
-              <br />
-              <br /> Blake Lively, cast as Lily Bloom, brings her usual grace
-              and screen presence to the role, but struggles to convey the
-              emotional depth required for such a layered character. Lily’s
-              internal conflict—her deep love for Ryle and her fear of becoming
-              ensnared in an abusive relationship—is essential to the narrative.
+              Blake Lively, cast as Lily Bloom, brings her usual grace and
+              screen presence to the role, but struggles to convey the emotional
+              depth required for such a layered character. Lily’s internal
+              conflict—her deep love for Ryle and her fear of becoming ensnared
+              in an abusive relationship—is essential to the narrative.
               Unfortunately, while Lively’s performance is sincere, it lacks the
               intensity and vulnerability needed to truly capture Lily’s
               emotional journey, leaving much of her struggle feeling muted.
@@ -114,11 +118,12 @@ function ItendswithusReview() {
       <div className="flex justify-center mt-3">
         <button
           onClick={toggleExpand}
-          className="text-white border-[1px] text-xs homeIntro rounded-lg px-4 py-2 mb-5 opacity-80 hover:opacity-100"
+          className="text-white border-[1px] text-xs tablet:text-base laptop:text-xl desktop:text-xs tv:text-sm homeIntro rounded-lg px-4 py-2 mb-5 opacity-80 hover:opacity-100"
         >
           {isExpanded ? "Read Less" : "Read More"}
         </button>
       </div>
+      <Recommend />
     </div>
   );
 }

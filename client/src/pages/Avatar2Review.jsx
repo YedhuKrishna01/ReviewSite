@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import Navbar from "../components/Navbar";
+import Recommend from "../components/Recommend";
 
 function Avatar2Review() {
   const [isExpanded, setIsExpanded] = useState(false);
@@ -11,61 +12,60 @@ function Avatar2Review() {
   return (
     <div>
       <Navbar />
-      <div className="text-white mt-5 flex justify-center">
-        <div className="w-10/12 homeIntro flex rounded-lg p-6">
-          <img src="/avatar2.jpg" className="h-48 mt-1 rounded-lg" />
+      <div className="text-white mt-5 laptop:mt-12 flex justify-center">
+        <div className="w-10/12 homeIntro flex rounded-lg p-6 laptop:p-10 desktop:p-6 tv:p-8">
+          <img
+            src="/avatar2.jpg"
+            className="h-48 tablet:h-56 laptop:h-64 desktop:h-52 tv:h-60 mt-2 tablet:mt-0 rounded-lg"
+          />
           <div className="flex flex-col pl-4">
-            <div className="text-base font-semibold">
+            <div className="text-base tablet:text-2xl laptop:text-3xl desktop:text-2xl tv:text-3xl font-semibold">
               Avatar: The Way of Water
             </div>
-            <div className="text-xs mt-3 text-zinc-300 font-medium">
+            <div className="text-xs tablet:text-base laptop:text-lg desktop:text-sm tv:text-base mt-3 text-zinc-300 font-medium">
               Acting : 8
             </div>
-            <div className="text-xs mt-3 text-zinc-300 font-medium">
+            <div className="text-xs tablet:text-base laptop:text-lg desktop:text-sm tv:text-base mt-3 text-zinc-300 font-medium">
               Filmmaking/VFX : 9.5
             </div>
-            <div className="text-xs mt-3 text-zinc-300 font-medium">
+            <div className="text-xs tablet:text-base laptop:text-lg desktop:text-sm tv:text-base mt-3 text-zinc-300 font-medium">
               Plot/Screenplay : 8
             </div>
-            <div className="text-xs mt-3 text-zinc-300 font-medium">
+            <div className="text-xs tablet:text-base laptop:text-lg desktop:text-sm tv:text-base mt-3 text-zinc-300 font-medium">
               Rewatchability : 8
             </div>
-            <div className="text-xs mt-3 text-zinc-300 font-medium">
+            <div className="text-xs tablet:text-base laptop:text-lg desktop:text-sm tv:text-base mt-3 text-zinc-300 font-medium">
               Overall : 8.37
             </div>
           </div>
         </div>
       </div>
-      <div className="flex justify-center mt-6 text-white">
-        <div className="w-10/12 mt-5 text-sm text-justify">
+      <div className="flex justify-center mt-6 laptop:mt-10 text-white">
+        <div className="w-10/12 desktop:w-9/12 mt-5 text-sm tablet:text-lg laptop:text-2xl desktop:text-base tv:text-lg text-justify">
           A worthy sequel to the 2009 film Avatar, James Cameron takes us back
           to the stunning world of Pandora, where human turned Na'vi Jake Sully
           (Sam Worthington) and Na'vi princess Ney'tiri (Zoe Saldaña) must do
           everything it takes to protect their children from the ‘sky people’
-          (humans from earth).
+          (humans from earth). “The way of water connects all things. The sea is
+          our home before our birth and after we die.” Beyond the 3D visual
+          spectacle that Avatar is, something we trust James Cameron to deliver,
+          the franchise’s beauty lies in its underlying spiritual arc and ode to
+          continuity of life. Life finds a way. It evolves no matter the
+          surroundings as love is transformative.
           <br />
           <br />
-          “The way of water connects all things. The sea is our home before our
-          birth and after we die.” Beyond the 3D visual spectacle that Avatar
-          is, something we trust James Cameron to deliver, the franchise’s
-          beauty lies in its underlying spiritual arc and ode to continuity of
-          life. Life finds a way. It evolves no matter the surroundings as love
-          is transformative.
+          Humans call the Na’vi ‘hostiles and insurgents’, when it is they who
+          forcefully infiltrate and occupy their land. Despite its magical,
+          fictional setting, Avatar is not devoid of socio-political themes. It
+          addresses race, civilisation, takes a strong anti-military stand and
+          makes a plea for environment conservation through its simple story of
+          parents and children. A spectacular climax revolves around parents
+          protecting their children and vice versa.
           <br />
           <br />
           {/* Normally invisible but can be expanded if needed */}
           {isExpanded && (
             <>
-              Humans call the Na’vi ‘hostiles and insurgents’, when it is they
-              who forcefully infiltrate and occupy their land. Despite its
-              magical, fictional setting, Avatar is not devoid of
-              socio-political themes. It addresses race, civilisation, takes a
-              strong anti-military stand and makes a plea for environment
-              conservation through its simple story of parents and children. A
-              spectacular climax revolves around parents protecting their
-              children and vice versa.
-              <br />
-              <br />
               From lush jungles to the gorgeous reefs… the action shifts from
               forests to the sea this time around and it’s equally meditative
               and hypnotic. For over three hours you find yourself immersed in
@@ -97,11 +97,12 @@ function Avatar2Review() {
       <div className="flex justify-center mt-3">
         <button
           onClick={toggleExpand}
-          className="text-white border-[1px] text-xs homeIntro rounded-lg px-4 py-2 mb-5 opacity-80 hover:opacity-100"
+          className="text-white border-[1px] text-xs tablet:text-base laptop:text-xl desktop:text-xs tv:text-sm homeIntro rounded-lg px-4 py-2 mb-5 opacity-80 hover:opacity-100"
         >
           {isExpanded ? "Read Less" : "Read More"}
         </button>
       </div>
+      <Recommend />
     </div>
   );
 }

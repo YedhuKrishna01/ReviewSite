@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import Navbar from "../components/Navbar";
+import Recommend from "../components/Recommend";
 
 function JailerReview() {
   const [isExpanded, setIsExpanded] = useState(false);
@@ -11,31 +12,36 @@ function JailerReview() {
   return (
     <div>
       <Navbar />
-      <div className="text-white mt-5 flex justify-center">
-        <div className="w-10/12 homeIntro flex rounded-lg p-6">
-          <img src="/jailer.jpg" className="h-48  rounded-lg" />
+      <div className="text-white mt-5 laptop:mt-12 flex justify-center">
+        <div className="w-10/12 homeIntro flex rounded-lg p-6 laptop:p-10 desktop:p-6 tv:p-8">
+          <img
+            src="/jailer.jpg"
+            className="h-48 tablet:h-56 laptop:h-64 desktop:h-52 tv:h-60 rounded-lg"
+          />
           <div className="flex flex-col pl-4">
-            <div className="text-base font-semibold">Jailer</div>
-            <div className="text-xs mt-3 text-zinc-300 font-medium">
+            <div className="text-base tablet:text-2xl laptop:text-3xl desktop:text-2xl tv:text-3xl font-semibold">
+              Jailer
+            </div>
+            <div className="text-xs tablet:text-base laptop:text-lg desktop:text-sm tv:text-base mt-3 text-zinc-300 font-medium">
               Acting : 7
             </div>
-            <div className="text-xs mt-3 text-zinc-300 font-medium">
+            <div className="text-xs tablet:text-base laptop:text-lg desktop:text-sm tv:text-base mt-3 text-zinc-300 font-medium">
               Filmmaking/VFX : 7.5
             </div>
-            <div className="text-xs mt-3 text-zinc-300 font-medium">
+            <div className="text-xs tablet:text-base laptop:text-lg desktop:text-sm tv:text-base mt-3 text-zinc-300 font-medium">
               Plot/Screenplay : 6.8
             </div>
-            <div className="text-xs mt-3 text-zinc-300 font-medium">
+            <div className="text-xs tablet:text-base laptop:text-lg desktop:text-sm tv:text-base mt-3 text-zinc-300 font-medium">
               Rewatchability : 7
             </div>
-            <div className="text-xs mt-3 text-zinc-300 font-medium">
+            <div className="text-xs tablet:text-base laptop:text-lg desktop:text-sm tv:text-base mt-3 text-zinc-300 font-medium">
               Overall : 7.1
             </div>
           </div>
         </div>
       </div>
-      <div className="flex justify-center mt-6 text-white">
-        <div className="w-10/12 mt-5 text-sm text-justify">
+      <div className="flex justify-center mt-6 laptop:mt-10 text-white">
+        <div className="w-10/12 desktop:w-9/12 mt-5 text-sm tablet:text-lg laptop:text-2xl desktop:text-base tv:text-lg text-justify">
           Tiger Muthuvel Pandiyan (Rajinikanth), a retired jailer, is a family
           man now. He spends his days making YouTube videos with his grandson,
           shopping for vegetables at the local market, and taking part in
@@ -108,11 +114,12 @@ function JailerReview() {
       <div className="flex justify-center mt-3">
         <button
           onClick={toggleExpand}
-          className="text-white border-[1px] text-xs homeIntro rounded-lg px-4 py-2 mb-5 opacity-80 hover:opacity-100"
+          className="text-white border-[1px] text-xs tablet:text-base laptop:text-xl desktop:text-xs tv:text-sm homeIntro rounded-lg px-4 py-2 mb-5 opacity-80 hover:opacity-100"
         >
           {isExpanded ? "Read Less" : "Read More"}
         </button>
       </div>
+      <Recommend />
     </div>
   );
 }

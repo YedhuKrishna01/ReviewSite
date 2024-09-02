@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import Navbar from "../components/Navbar";
+import Recommend from "../components/Recommend";
 
 function AadujeevithamReview() {
   const [isExpanded, setIsExpanded] = useState(false);
@@ -11,60 +12,61 @@ function AadujeevithamReview() {
   return (
     <div>
       <Navbar />
-      <div className="text-white mt-5 flex justify-center">
-        <div className="w-10/12 homeIntro flex rounded-lg p-6">
-          <img src="/goatlife.jpg" className="h-48 rounded-lg" />
+      <div className="text-white mt-5 laptop:mt-12 flex justify-center">
+        <div className="w-10/12 homeIntro flex rounded-lg p-6 laptop:p-10 desktop:p-6 tv:p-8">
+          <img
+            src="/goatlife.jpg"
+            className="h-48 tablet:h-56 laptop:h-64 desktop:h-52 tv:h-60 rounded-lg"
+          />
           <div className="flex flex-col pl-4">
-            <div className="text-base font-semibold">Aadujeevitham</div>
-            <div className="text-xs mt-3 text-zinc-300 font-medium">
+            <div className="text-base tablet:text-2xl laptop:text-3xl desktop:text-2xl tv:text-3xl font-semibold">
+              Aadujeevitham
+            </div>
+            <div className="text-xs tablet:text-base laptop:text-lg desktop:text-sm tv:text-base mt-3 text-zinc-300 font-medium">
               Acting : 9.6
             </div>
-            <div className="text-xs mt-3 text-zinc-300 font-medium">
+            <div className="text-xs tablet:text-base laptop:text-lg desktop:text-sm tv:text-base mt-3 text-zinc-300 font-medium">
               Filmmaking/VFX : 9
             </div>
-            <div className="text-xs mt-3 text-zinc-300 font-medium">
+            <div className="text-xs tablet:text-base laptop:text-lg desktop:text-sm tv:text-base mt-3 text-zinc-300 font-medium">
               Plot/Screenplay : 8.6
             </div>
-            <div className="text-xs mt-3 text-zinc-300 font-medium">
+            <div className="text-xs tablet:text-base laptop:text-lg desktop:text-sm tv:text-base mt-3 text-zinc-300 font-medium">
               Rewatchability : 6
             </div>
-            <div className="text-xs mt-3 text-zinc-300 font-medium">
+            <div className="text-xs tablet:text-base laptop:text-lg desktop:text-sm tv:text-base mt-3 text-zinc-300 font-medium">
               Overall : 8.3
             </div>
           </div>
         </div>
       </div>
-      <div className="flex justify-center mt-6 text-white">
-        <div className="w-10/12 mt-5 text-sm text-justify">
+      <div className="flex justify-center mt-6 laptop:mt-10 text-white">
+        <div className="w-10/12 desktop:w-9/12 mt-5 text-sm tablet:text-lg laptop:text-2xl desktop:text-base tv:text-lg text-justify">
           Unimaginable are the ways in which adversities can reshape a human
           being. The physical transformation is the most obvious of these. But,
           Blessy’s Aadujeevitham — based on the real-life story of a man who
           ends up living in slave-like conditions in a goat farm in the middle
-          of a desert — deals with much more than this.
+          of a desert — deals with much more than this. For instance, it is
+          interesting how the film treats the ill-fated man’s struggles with
+          language. Initially, when Najeeb (Prithviraj Sukumaran) lands up with
+          a younger compatriot at a Saudi airport, one sees him struggling to
+          communicate in any language other than Malayalam. This also has a huge
+          role to play in the unfortunate turn their life takes afterwards.
           <br />
           <br />
-          For instance, it is interesting how the film treats the ill-fated
-          man’s struggles with language. Initially, when Najeeb (Prithviraj
-          Sukumaran) lands up with a younger compatriot at a Saudi airport, one
-          sees him struggling to communicate in any language other than
-          Malayalam. This also has a huge role to play in the unfortunate turn
-          their life takes afterwards.
+          Later, after years of herding goats and camels in the farm, and with
+          no human interaction (other than the abusive words from his ‘owner’),
+          he loses the only language he knew, almost bleating like a goat when
+          he sees his long-lost friend. Aadujeevitham, which otherwise is mostly
+          filled with extreme suffering and heightened emotions, has a few such
+          delicate touches. One of the others being an emaciated Najeeb finding
+          enough time to savour a bath after long years, in the small window of
+          time that he got to escape from the farm.
           <br />
           <br />
           {/* Normally invisible but can be expanded if needed */}
           {isExpanded && (
             <>
-              Later, after years of herding goats and camels in the farm, and
-              with no human interaction (other than the abusive words from his
-              ‘owner’), he loses the only language he knew, almost bleating like
-              a goat when he sees his long-lost friend. Aadujeevitham, which
-              otherwise is mostly filled with extreme suffering and heightened
-              emotions, has a few such delicate touches. One of the others being
-              an emaciated Najeeb finding enough time to savour a bath after
-              long years, in the small window of time that he got to escape from
-              the farm.
-              <br />
-              <br />
               Benyamin’s book, one of the most read books in Malayalam, on which
               the film is based, drowns itself in suffering almost to the level
               of monotony. The film sticks to the basic text, except for a few
@@ -111,11 +113,12 @@ function AadujeevithamReview() {
       <div className="flex justify-center mt-3">
         <button
           onClick={toggleExpand}
-          className="text-white border-[1px] text-xs homeIntro rounded-lg px-4 py-2 mb-5 opacity-80 hover:opacity-100"
+          className="text-white border-[1px] text-xs tablet:text-base laptop:text-xl desktop:text-xs tv:text-sm homeIntro rounded-lg px-4 py-2 mb-5 opacity-80 hover:opacity-100"
         >
           {isExpanded ? "Read Less" : "Read More"}
         </button>
       </div>
+      <Recommend />
     </div>
   );
 }

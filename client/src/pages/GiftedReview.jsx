@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import Navbar from "../components/Navbar";
+import Recommend from "../components/Recommend";
 
 function GiftedReview() {
   const [isExpanded, setIsExpanded] = useState(false);
@@ -11,31 +12,36 @@ function GiftedReview() {
   return (
     <div>
       <Navbar />
-      <div className="text-white mt-5 flex justify-center">
-        <div className="w-10/12 homeIntro flex rounded-lg p-6">
-          <img src="/gifted.jpg" className="h-48  rounded-lg" />
+      <div className="text-white mt-5 laptop:mt-12 flex justify-center">
+        <div className="w-10/12 homeIntro flex rounded-lg p-6 laptop:p-10 desktop:p-6 tv:p-8">
+          <img
+            src="/gifted.jpg"
+            className="h-48 tablet:h-56 laptop:h-64 desktop:h-52 tv:h-60 rounded-lg"
+          />
           <div className="flex flex-col pl-4">
-            <div className="text-base font-semibold">Gifted</div>
-            <div className="text-xs mt-3 text-zinc-300 font-medium">
+            <div className="text-base tablet:text-2xl laptop:text-3xl desktop:text-2xl tv:text-3xl font-semibold">
+              Gifted
+            </div>
+            <div className="text-xs tablet:text-base laptop:text-lg desktop:text-sm tv:text-base mt-3 text-zinc-300 font-medium">
               Acting : 8
             </div>
-            <div className="text-xs mt-3 text-zinc-300 font-medium">
+            <div className="text-xs tablet:text-base laptop:text-lg desktop:text-sm tv:text-base mt-3 text-zinc-300 font-medium">
               Filmmaking/VFX : 8
             </div>
-            <div className="text-xs mt-3 text-zinc-300 font-medium">
+            <div className="text-xs tablet:text-base laptop:text-lg desktop:text-sm tv:text-base mt-3 text-zinc-300 font-medium">
               Plot/Screenplay : 8.5
             </div>
-            <div className="text-xs mt-3 text-zinc-300 font-medium">
+            <div className="text-xs tablet:text-base laptop:text-lg desktop:text-sm tv:text-base mt-3 text-zinc-300 font-medium">
               Rewatchability : 8
             </div>
-            <div className="text-xs mt-3 text-zinc-300 font-medium">
+            <div className="text-xs tablet:text-base laptop:text-lg desktop:text-sm tv:text-base mt-3 text-zinc-300 font-medium">
               Overall : 8.12
             </div>
           </div>
         </div>
       </div>
-      <div className="flex justify-center mt-6 text-white">
-        <div className="w-10/12 mt-5 text-sm text-justify">
+      <div className="flex justify-center mt-6 laptop:mt-10 text-white">
+        <div className="w-10/12 desktop:w-9/12 mt-5 text-sm tablet:text-lg laptop:text-2xl desktop:text-base tv:text-lg text-justify">
           A schoolteacher’s amazed discovery of an apparently genius child; a
           custody battle bitterly dividing family members; a single father
           becoming romantically involved with his little girl’s elementary
@@ -50,22 +56,19 @@ function GiftedReview() {
           has a heart of gold. Working as a boat repairman in a Florida coastal
           town, he shares a modest home with his 7-year-old niece Mary (Mckenna
           Grace), the daughter of his sister, who committed suicide when Mary
-          was just six months old.
+          was just six months old. Mary, we soon learn, is a child prodigy,
+          having inherited her mother’s brilliance for mathematics. So she’s
+          understandably frustrated upon being asked to perform simple addition
+          in her first-grade class. When kindly teacher Bonnie (Jenny Slate)
+          discovers her pupil’s extraordinary abilities, she brings them to the
+          attention of the school’s principal (Elizabeth Marvel), who promptly
+          offers Frank the opportunity to place Mary in a school for gifted
+          children, with a full scholarship.
           <br />
           <br />
           {/* Normally invisible but can be expanded if needed */}
           {isExpanded && (
             <>
-              Mary, we soon learn, is a child prodigy, having inherited her
-              mother’s brilliance for mathematics. So she’s understandably
-              frustrated upon being asked to perform simple addition in her
-              first-grade class. When kindly teacher Bonnie (Jenny Slate)
-              discovers her pupil’s extraordinary abilities, she brings them to
-              the attention of the school’s principal (Elizabeth Marvel), who
-              promptly offers Frank the opportunity to place Mary in a school
-              for gifted children, with a full scholarship.
-              <br />
-              <br />
               Frank turns down the offer, explaining that he wants Mary to lead
               a normal little girl’s life unlike her mother, who was driven by
               her and Frank’s wealthy mother Evelyn (Lindsay Duncan) to
@@ -128,11 +131,12 @@ function GiftedReview() {
       <div className="flex justify-center mt-3">
         <button
           onClick={toggleExpand}
-          className="text-white border-[1px] text-xs homeIntro rounded-lg px-4 py-2 mb-5 opacity-80 hover:opacity-100"
+          className="text-white border-[1px] text-xs tablet:text-base laptop:text-xl desktop:text-xs tv:text-sm homeIntro rounded-lg px-4 py-2 mb-5 opacity-80 hover:opacity-100"
         >
           {isExpanded ? "Read Less" : "Read More"}
         </button>
       </div>
+      <Recommend />
     </div>
   );
 }

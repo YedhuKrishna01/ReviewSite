@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import Navbar from "../components/Navbar";
+import Recommend from "../components/Recommend";
 
 function TheInternReview() {
   const [isExpanded, setIsExpanded] = useState(false);
@@ -11,31 +12,36 @@ function TheInternReview() {
   return (
     <div>
       <Navbar />
-      <div className="text-white mt-5 flex justify-center">
-        <div className="w-10/12 homeIntro flex rounded-lg p-6">
-          <img src="/intern.jpg" className="h-48  rounded-lg" />
+      <div className="text-white mt-5 laptop:mt-12 flex justify-center">
+        <div className="w-10/12 homeIntro flex rounded-lg p-6 laptop:p-10 desktop:p-6 tv:p-8">
+          <img
+            src="/intern.jpg"
+            className="h-48 tablet:h-56 laptop:h-64 desktop:h-52 tv:h-60 rounded-lg"
+          />
           <div className="flex flex-col pl-4">
-            <div className="text-base font-semibold">The Intern</div>
-            <div className="text-xs mt-3 text-zinc-300 font-medium">
+            <div className="text-base tablet:text-2xl laptop:text-3xl desktop:text-2xl tv:text-3xl font-semibold">
+              The Intern
+            </div>
+            <div className="text-xs tablet:text-base laptop:text-lg desktop:text-sm tv:text-base mt-3 text-zinc-300 font-medium">
               Acting : 8
             </div>
-            <div className="text-xs mt-3 text-zinc-300 font-medium">
+            <div className="text-xs tablet:text-base laptop:text-lg desktop:text-sm tv:text-base mt-3 text-zinc-300 font-medium">
               Filmmaking/VFX : 8.2
             </div>
-            <div className="text-xs mt-3 text-zinc-300 font-medium">
+            <div className="text-xs tablet:text-base laptop:text-lg desktop:text-sm tv:text-base mt-3 text-zinc-300 font-medium">
               Plot/Screenplay : 8
             </div>
-            <div className="text-xs mt-3 text-zinc-300 font-medium">
+            <div className="text-xs tablet:text-base laptop:text-lg desktop:text-sm tv:text-base mt-3 text-zinc-300 font-medium">
               Rewatchability : 8
             </div>
-            <div className="text-xs mt-3 text-zinc-300 font-medium">
+            <div className="text-xs tablet:text-base laptop:text-lg desktop:text-sm tv:text-base mt-3 text-zinc-300 font-medium">
               Overall : 8.05
             </div>
           </div>
         </div>
       </div>
-      <div className="flex justify-center mt-6 text-white">
-        <div className="w-10/12 mt-5 text-sm text-justify">
+      <div className="flex justify-center mt-6 laptop:mt-10 text-white">
+        <div className="w-10/12 desktop:w-9/12 mt-5 text-sm tablet:text-lg laptop:text-2xl desktop:text-base tv:text-lg text-justify">
           Writer-director Nancy Meyers has scored a number of commercial
           successes (including It’s Complicated and Something’s Gotta Give) by
           going against the grain and making movies centered on women and aimed
@@ -52,20 +58,18 @@ function TheInternReview() {
           website, and De Niro is Ben, a senior intern hired to work for her
           after he rejects the idea of retirement. Fortunately, there is no hint
           of romance between the two characters; it’s more of a friendship and
-          professional relationship, which turns out to benefit both of them.
+          professional relationship, which turns out to benefit both of them. So
+          far, so good, and the supporting cast is also appealing, even if some
+          of their roles are very thinly written. But there’s a vacuum at the
+          center of the film that becomes increasingly problematic: Jules is, at
+          first, reluctant to take on Ben as her intern, but she quickly
+          realizes his value, so there isn’t a lot of conflict to enliven this
+          central relationship.
           <br />
           <br />
           {/* Normally invisible but can be expanded if needed */}
           {isExpanded && (
             <>
-              So far, so good, and the supporting cast is also appealing, even
-              if some of their roles are very thinly written. But there’s a
-              vacuum at the center of the film that becomes increasingly
-              problematic: Jules is, at first, reluctant to take on Ben as her
-              intern, but she quickly realizes his value, so there isn’t a lot
-              of conflict to enliven this central relationship.
-              <br />
-              <br />
               This film bears a resemblance to Baby Boom, a 1987 film co-written
               by Meyers and her former partner, Charles Shyer. In that picture,
               Diane Keaton was a high-flying executive who’s forced to
@@ -107,11 +111,12 @@ function TheInternReview() {
       <div className="flex justify-center mt-3">
         <button
           onClick={toggleExpand}
-          className="text-white border-[1px] text-xs homeIntro rounded-lg px-4 py-2 mb-5 opacity-80 hover:opacity-100"
+          className="text-white border-[1px] text-xs tablet:text-base laptop:text-xl desktop:text-xs tv:text-sm homeIntro rounded-lg px-4 py-2 mb-5 opacity-80 hover:opacity-100"
         >
           {isExpanded ? "Read Less" : "Read More"}
         </button>
       </div>
+      <Recommend />
     </div>
   );
 }

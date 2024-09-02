@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import Navbar from "../components/Navbar";
+import Recommend from "../components/Recommend";
 
 function ThebeastwithinReview() {
   const [isExpanded, setIsExpanded] = useState(false);
@@ -11,31 +12,36 @@ function ThebeastwithinReview() {
   return (
     <div>
       <Navbar />
-      <div className="text-white mt-5 flex justify-center">
-        <div className="w-10/12 homeIntro flex rounded-lg p-6">
-          <img src="/beast.jpg" className="h-48 rounded-lg" />
+      <div className="text-white mt-5 laptop:mt-12 flex justify-center">
+        <div className="w-10/12 homeIntro flex rounded-lg p-6 laptop:p-10 desktop:p-6 tv:p-8">
+          <img
+            src="/beast.jpg"
+            className="h-48 tablet:h-56 laptop:h-64 desktop:h-52 tv:h-60 rounded-lg"
+          />
           <div className="flex flex-col pl-4">
-            <div className="text-base font-semibold">The Beast Within</div>
-            <div className="text-xs mt-3 text-zinc-300 font-medium">
+            <div className="text-base tablet:text-2xl laptop:text-3xl desktop:text-2xl tv:text-3xl font-semibold">
+              The Beast Within
+            </div>
+            <div className="text-xs tablet:text-base laptop:text-lg desktop:text-sm tv:text-base mt-3 text-zinc-300 font-medium">
               Acting : 7
             </div>
-            <div className="text-xs mt-3 text-zinc-300 font-medium">
+            <div className="text-xs tablet:text-base laptop:text-lg desktop:text-sm tv:text-base mt-3 text-zinc-300 font-medium">
               Filmmaking/VFX : 7
             </div>
-            <div className="text-xs mt-3 text-zinc-300 font-medium">
+            <div className="text-xs tablet:text-base laptop:text-lg desktop:text-sm tv:text-base mt-3 text-zinc-300 font-medium">
               Plot/Screenplay : 6
             </div>
-            <div className="text-xs mt-3 text-zinc-300 font-medium">
+            <div className="text-xs tablet:text-base laptop:text-lg desktop:text-sm tv:text-base mt-3 text-zinc-300 font-medium">
               Rewatchability : 6
             </div>
-            <div className="text-xs mt-3 text-zinc-300 font-medium">
+            <div className="text-xs tablet:text-base laptop:text-lg desktop:text-sm tv:text-base mt-3 text-zinc-300 font-medium">
               Overall : 6.5
             </div>
           </div>
         </div>
       </div>
-      <div className="flex justify-center mt-6 text-white">
-        <div className="w-10/12 mt-5 text-sm text-justify">
+      <div className="flex justify-center mt-6 laptop:mt-10 text-white">
+        <div className="w-10/12 desktop:w-9/12 mt-5 text-sm tablet:text-lg laptop:text-2xl desktop:text-base tv:text-lg text-justify">
           The Beast Within follows 10-year-old Willow (Caoilinn Springall), who
           lives deep in the English countryside with her parents. For his debut
           film, Alexander J. Farrell, who co-wrote the script with Greer Taylor
@@ -52,29 +58,26 @@ function ThebeastwithinReview() {
           werewolf story, but through the eyes of a young girl. From this
           perspective, we get a story that uses the famous hairy creature as an
           allegory of the beast within our families as it follows Willow's
-          family history of abuse and trauma.
+          family history of abuse and trauma.Willow spends her days tied to an
+          oxygen tank, reading and spending time with her mother and
+          grandfather. Her father (Kit Harington), while loving, is somewhat
+          distant, disappearing for days every month with the help of her
+          mother, who is always on edge. Her mother and grandfather bicker about
+          the truth of the situation, but as a girl relegated to being indoors
+          and having to entertain herself with her imagination, Willow has
+          sharpened her observational skills and seeks the truth. The truth is a
+          terrible reality that, while very fantastical, harkens to real-world
+          issues about fragile families and dangerous fathers.
           <br />
           <br />
           {/* Normally invisible but can be expanded if needed */}
           {isExpanded && (
             <>
-              Willow spends her days tied to an oxygen tank, reading and
-              spending time with her mother and grandfather. Her father (Kit
-              Harington), while loving, is somewhat distant, disappearing for
-              days every month with the help of her mother, who is always on
-              edge. Her mother and grandfather bicker about the truth of the
-              situation, but as a girl relegated to being indoors and having to
-              entertain herself with her imagination, Willow has sharpened her
-              observational skills and seeks the truth. The truth is a terrible
-              reality that, while very fantastical, harkens to real-world issues
-              about fragile families and dangerous fathers.
-              <br />
-              <br /> Where The Beast Within stumbles is the writing. As a
-              coming-of-age story, it's impressive. The theme is obvious, if a
-              little muddled, but it's easy to ascertain what Farrell is
-              attempting to accomplish. It's when things take a turn that the
-              director loses grip on the narrative, and the delicate layers come
-              crashing down.
+              Where The Beast Within stumbles is the writing. As a coming-of-age
+              story, it's impressive. The theme is obvious, if a little muddled,
+              but it's easy to ascertain what Farrell is attempting to
+              accomplish. It's when things take a turn that the director loses
+              grip on the narrative, and the delicate layers come crashing down.
               <br />
               <br /> This is a horror, but it's too understated due to the
               weight of the family drama. As well shot as this picture is, the
@@ -106,11 +109,12 @@ function ThebeastwithinReview() {
       <div className="flex justify-center mt-3">
         <button
           onClick={toggleExpand}
-          className="text-white border-[1px] text-xs homeIntro rounded-lg px-4 py-2 mb-5 opacity-80 hover:opacity-100"
+          className="text-white border-[1px] text-xs tablet:text-base laptop:text-xl desktop:text-xs tv:text-sm homeIntro rounded-lg px-4 py-2 mb-5 opacity-80 hover:opacity-100"
         >
           {isExpanded ? "Read Less" : "Read More"}
         </button>
       </div>
+      <Recommend />
     </div>
   );
 }
